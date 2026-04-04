@@ -3,18 +3,18 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default defineConfig(({ command })=>({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),],
-  base: command === 'build' ? '/Headphone/' : '/',
-   build: {
-    outDir: 'build/client'
-  }
-}));
-
-// export default defineConfig({
+// export default defineConfig(({ command })=>({
 //   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),],
-//   base: '/',
-//   build: {
+//   base: command === 'build' ? '/Headphone/' : '/',
+//    build: {
 //     outDir: 'build/client'
 //   }
-// });
+// }));
+
+export default defineConfig({
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),],
+  base: '/Headphone/',
+  build: {
+    outDir: 'build/client'
+  }
+});
