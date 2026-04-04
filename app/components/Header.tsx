@@ -23,14 +23,14 @@ export function Header() {
     <>
       <header className={s.header}>
         <div className={s.container}>
-          <Link to="/" onClick={closeAll} className={s.logo}>
+          <Link to="/Headphone/" onClick={closeAll} className={s.logo}>
             Fresh<span className="text-slate-900">Tech</span>
           </Link>
           
           <nav className={s.nav}>
-            <Link to="/" className={s.link}>Головна</Link>
-            <Link to="/catalog" className={s.link}>Каталог</Link>
-            <Link to="/reviews" className={s.link}>Огляди</Link>
+            <Link to="/Headphone/" className={s.link}>Головна</Link>
+            <Link to="/Headphone/catalog" className={s.link}>Каталог</Link>
+            <Link to="/Headphone/reviews" className={s.link}>Огляди</Link>
           </nav>
 
           <div className={s.actions}>
@@ -47,9 +47,9 @@ export function Header() {
         </div>
 
         <div className={`${s.mobileMenu} ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
-          <Link to="/" onClick={closeAll} className={s.mobileLink}>Головна</Link>
-          <Link to="/catalog" onClick={closeAll} className={s.mobileLink}>Каталог</Link>
-          <Link to="/reviews" onClick={closeAll} className={s.mobileLink}>Огляди</Link>
+          <Link to="/Headphone/" onClick={closeAll} className={s.mobileLink}>Головна</Link>
+          <Link to="/Headphone/catalog" onClick={closeAll} className={s.mobileLink}>Каталог</Link>
+          <Link to="/Headphone/reviews" onClick={closeAll} className={s.mobileLink}>Огляди</Link>
         </div>
       </header>
 
