@@ -8,7 +8,7 @@ export function Footer() {
     <footer className={s.footer}>
       <div className={s.grid}>
         <div className="col-span-1">
-          <Link to="/Headphone/" className={s.logo}>
+          <Link to="/Headphone" className={s.logo}>
             Fresh<span className="text-blue-500">Tech</span>
           </Link>
           <p className="mt-4">Найкращі рішення для вашого комфорту з 2024 року.</p>
