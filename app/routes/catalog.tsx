@@ -1,6 +1,6 @@
 import { products } from "../data/products";
 import { ProductCard } from "../components/ProductCard";
-import { s } from "../styles/cart.style";
+
 export default function CatalogPage() {
   return (
     <main className="max-w-6xl mx-auto p-6 py-16">

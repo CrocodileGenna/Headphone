@@ -7,7 +7,7 @@ import { Reviews } from "../components/Reviews";
 import { ProductOverview } from "../components/ProductOverview";
 import type { Route } from "./+types/home"; 
 
-export async function loader({ params }: Route.LoaderArgs) {
+export async function clientLoader({ params }: Route.LoaderArgs) {
   return {
     items: products,
   };
@@ -32,6 +32,7 @@ export default function HomePage() {
 
       <InfoSection />
       <ProductOverview />
+      <Reviews/>
     </main>
   );
 }
