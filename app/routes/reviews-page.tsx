@@ -11,7 +11,6 @@ export default function ReviewsPage() {
         </p>
       </div>
 
-      {/* Можна додати кілька блоків огляду для різних категорій */}
       <ProductOverview />
       
       <div className="bg-slate-50">
