@@ -8,7 +8,7 @@ export function Footer() {
     <footer className={s.footer}>
       <div className={s.grid}>
         <div className="col-span-1">
-          <Link to="/Headphone" className={s.logo}>
+          <Link to="/" className={s.logo}>
             Fresh<span className="text-blue-500">Tech</span>
           </Link>
           <p className="mt-4">Найкращі рішення для вашого комфорту з 2024 року.</p>
@@ -17,16 +17,16 @@ export function Footer() {
         <div>
           <h4 className={s.colTitle}>Клієнтам</h4>
           <nav className="space-y-4">
-            <Link to="/Headphone/catalog" className={s.link}>Каталог</Link>
-            <Link to="/Headphone/shipping" className={s.link}>Доставка</Link>
+            <Link to="/catalog" className={s.link}>Каталог</Link>
+            <Link to="/shipping" className={s.link}>Доставка</Link>
           </nav>
         </div>
 
         <div>
           <h4 className={s.colTitle}>Підтримка</h4>
           <nav className="space-y-4">
-            <Link to="/Headphone/privacy" className={s.link}>Приватність</Link>
-            <Link to="/Headphone/returns" className={s.link}>Повернення</Link>
+            <Link to="/privacy" className={s.link}>Приватність</Link>
+            <Link to="/returns" className={s.link}>Повернення</Link>
           </nav>
         </div>
 
