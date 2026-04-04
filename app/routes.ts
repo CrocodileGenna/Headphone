@@ -9,3 +9,11 @@ export default [
   route("catalog", "routes/catalog.tsx"),
   route("reviews", "routes/reviews-page.tsx"), 
 ] satisfies RouteConfig;
+
+// export default [
+//   route("Headphone", "", [
+//     index("routes/home.tsx"),
+//     route("catalog", "routes/catalog.tsx"),
+//     route("reviews", "routes/reviews-page.tsx"),
+//   ]),
+// ] satisfies RouteConfig;
