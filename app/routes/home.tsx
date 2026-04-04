@@ -14,7 +14,6 @@ export async function clientLoader({ params }: Route.LoaderArgs) {
 }
 
 export default function HomePage() {
-  // Вибираємо перший товар як основний
   const mainProduct = products[0];
 
   return (
