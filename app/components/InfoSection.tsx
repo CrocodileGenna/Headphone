@@ -1,4 +1,4 @@
-import { s } from "../styles/info.style";
+import * as S from "../styles/info.style";
 
 export function InfoSection() {
   const benefits = [
@@ -8,26 +8,27 @@ export function InfoSection() {
   ];
 
   return (
-    <section className={s.section}>
-      <div className={s.container}>
-        <div>
-          <h2 className={s.title}>Свіжість та комфорт у будь-який час</h2>
-          <p className={s.text}>
+    <S.Section>
+      <S.Container>
+        <S.Content>
+          <S.Title>Свіжість та комфорт у будь-який час</S.Title>
+          <S.Text>
             Ми створюємо портативні рішення для вашого мікроклімату. Наші гаджети допомагають підтримувати вологість повітря та прохолоду, де б ви не були.
-          </p>
-        </div>
-        <div className="grid gap-6">
+          </S.Text>
+        </S.Content>
+
+        <S.BenefitsGrid>
           {benefits.map((item, index) => (
-            <div key={index} className={s.benefitCard}>
-              <span className="text-3xl">{item.icon}</span>
+            <S.BenefitCard key={index}>
+              <S.IconWrapper>{item.icon}</S.IconWrapper>
               <div>
-                <h4 className={s.benefitTitle}>{item.title}</h4>
-                <p className={s.benefitDesc}>{item.desc}</p>
+                <S.BenefitTitle>{item.title}</S.BenefitTitle>
+                <S.BenefitDesc>{item.desc}</S.BenefitDesc>
               </div>
-            </div>
+            </S.BenefitCard>
           ))}
-        </div>
-      </div>
-    </section>
+        </S.BenefitsGrid>
+      </S.Container>
+    </S.Section>
   );
 }

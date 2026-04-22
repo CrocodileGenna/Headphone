@@ -1,4 +1,4 @@
-import { s } from "../styles/reviews.style";
+import * as S from "../styles/reviews.style";
 
 export function Reviews() {
   const reviews = [
@@ -7,18 +7,25 @@ export function Reviews() {
   ];
 
   return (
-    <section className={s.section}>
-      <div className={s.container}>
-        <h2 className={s.title}><span className={s.divider} />Відгуки клієнтів</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <S.Section>
+      <S.Container>
+        <S.Title>
+          <S.Divider />
+          Відгуки клієнтів
+        </S.Title>
+
+        <S.ReviewsGrid>
           {reviews.map((rev, i) => (
-            <div key={i} className={s.card}>
-              <p className="text-slate-600">"{rev.text}"</p>
-              <p className={s.author}>— {rev.name}</p>
-            </div>
+            <S.ReviewCard key={i}>
+              <S.StarWrapper>
+                {"★".repeat(rev.rating)}
+              </S.StarWrapper>
+              <S.QuoteText>"{rev.text}"</S.QuoteText>
+              <S.Author>— {rev.name}</S.Author>
+            </S.ReviewCard>
           ))}
-        </div>
-      </div>
-    </section>
+        </S.ReviewsGrid>
+      </S.Container>
+    </S.Section>
   );
 }

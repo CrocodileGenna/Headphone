@@ -11,10 +11,3 @@ export default defineConfig(({ command })=>({
   }
 }));
 
-// export default defineConfig({
-//   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),],
-//   base: '/Headphone/',
-//   build: {
-//     outDir: 'build/client'
-//   }
-// });

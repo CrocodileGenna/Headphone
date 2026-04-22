@@ -9,9 +9,9 @@ interface Product {
 }
 
 interface CartContextType {
-  cartItems: Product[];
-  addToCart: (product: Product) => void;
-  removeFromCart: (productId: number) => void;
+  cartItems: any[];
+  addToCart: (product: any) => void;
+  removeFromCart: (index: number) => void;
   totalPrice: number;
 }
 
@@ -24,15 +24,22 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     setCartItems((prev) => [...prev, product]);
   };
 
-  const removeFromCart = (productId: number) => {
+  // const removeFromCart = (productId: number) => {
+  //   setCartItems((prev) => {
+  //     const index = prev.findIndex((item) => item.id === productId);
+  //     if (index !== -1) {
+  //       const newCart = [...prev];
+  //       newCart.splice(index, 1);
+  //       return newCart;
+  //     }
+  //     return prev;
+  //   });
+  // };
+  const removeFromCart = (index: number) => {
     setCartItems((prev) => {
-      const index = prev.findIndex((item) => item.id === productId);
-      if (index !== -1) {
-        const newCart = [...prev];
-        newCart.splice(index, 1);
-        return newCart;
-      }
-      return prev;
+      const newCart = [...prev];
+      newCart.splice(index, 1); // Удаляем конкретный элемент по его позиции
+      return newCart;
     });
   };
 
