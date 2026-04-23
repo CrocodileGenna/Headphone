@@ -149,8 +149,7 @@ export default function ProductPage() {
   return (
     <S.PageWrapper>
       {/* 1. БЛОК ХИРО */}
-      {/* <S.HeroBanner src={product["image-all-colors"] || product.image}> */}
-        <S.HeroBanner src={`${import.meta.env.BASE_URL}${(product["image-all-colors"] || product.image).replace(/^\//, '')}`}>
+      <S.HeroBanner src={product["image-all-colors"] || product.image}>
         <S.Container>
           <S.HeroContent>
             {/* <h1>{product.name}</h1>
@@ -167,11 +166,8 @@ export default function ProductPage() {
         <S.Container>
           <S.MainGrid>
             <S.ImageBox>
-              {/* <img src={selectedVariant.img} alt={product.name} /> */}
-              <img 
-    src={`${import.meta.env.BASE_URL}${selectedVariant.img.replace(/^\//, '')}`} 
-    alt={product.name} 
-  />
+              <img src={selectedVariant.img} alt={product.name} />
+          
             </S.ImageBox>
             
             <S.InfoBox>
@@ -205,16 +201,11 @@ export default function ProductPage() {
       <S.InfoGraphicSection>
         <S.Container>
           <S.InfoGraphicGrid>
-            {/* <img 
+            <img 
               src={product["image-description"]} 
               alt="Features" 
               style={{width: '100%', borderRadius: '20px'}} 
-            /> */}
-            <img 
-    src={`${import.meta.env.BASE_URL}${product["image-description"].replace(/^\//, '')}`} 
-    alt="Features" 
-    style={{ width: '100%', borderRadius: '20px' }} 
-  />
+            />
             <div>
               <h2 style={{fontSize: '2rem', marginBottom: '30px'}}>Чому цей продукт?</h2>
               <S.List>
