@@ -89,8 +89,11 @@ const [isAnimated, setIsAnimated] = useState(false);
     // {/* Перетворюємо Wrapper на Link */}
     <S.Wrapper to={`/product/${product.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       <S.ImageBox>
-        <S.Image src={selectedVariant.img} alt={product.name} />
-   
+        {/* <S.Image src={selectedVariant.img} alt={product.name} /> */}
+        <S.Image 
+  src={`${import.meta.env.BASE_URL}${selectedVariant.img.replace(/^\//, '')}`} 
+  alt={product.name} 
+/>
       </S.ImageBox>
       
       <S.Title>{product.name}</S.Title>

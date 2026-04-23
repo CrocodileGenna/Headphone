@@ -90,10 +90,14 @@ export function Hero() {
      {sliderProducts.map((product) => (
           <SwiperSlide key={product.id}>
             <S.SlideContent>
-              <S.BackgroundImage 
+              {/* <S.BackgroundImage 
                 src={product["image-hero"]} 
                 alt={product.name} 
-              />
+              /> */}
+             <S.BackgroundImage 
+  src={`${import.meta.env.BASE_URL}${product["image-hero"].replace(/^\//, "")}`}
+  alt={product.name}
+/>
 
               <S.Overlay />
               
