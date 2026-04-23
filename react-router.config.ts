@@ -2,6 +2,6 @@ import type { Config } from "@react-router/dev/config";
 
 export default {
   ssr: false,
-  basename: "/Headphone",
+  basename: "/Headphone/",
   prerender: false,
 } satisfies Config;
