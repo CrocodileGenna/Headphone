@@ -1,4 +1,4 @@
-import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./products-Dtf3OUWm.js";import{P as p}from"./ProductCard-Hz54tOaG.js";import{s as e}from"./emotion-styled.browser.esm-CsB5FJZD.js";import"./CartContext-DXefdILW.js";const m=e.main`
+import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./products-CEWUdiyj.js";import{P as p}from"./ProductCard-BGAOVhRf.js";import{s as e}from"./emotion-styled.browser.esm-CsB5FJZD.js";import"./CartContext-DXefdILW.js";const m=e.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 24px 64px; // Мобильные отступы

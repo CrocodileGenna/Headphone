@@ -1,4 +1,4 @@
-import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./CartContext-DXefdILW.js";import{s as t}from"./emotion-styled.browser.esm-CsB5FJZD.js";import{k as b,c as g}from"./products-Dtf3OUWm.js";const u=b`
+import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./CartContext-DXefdILW.js";import{s as t}from"./emotion-styled.browser.esm-CsB5FJZD.js";import{k as b,c as g}from"./products-CEWUdiyj.js";const u=b`
   0% {
     background-color: #10b981; /* Зеленый цвет (например, Emerald 500) */
     transform: scale(1);
