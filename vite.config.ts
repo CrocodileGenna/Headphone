@@ -5,7 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig(({ command })=>({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),],
-  base: command === 'build' ? '/Headphone/' : '/',
+  // base: command === 'build' ? '/Headphone/' : '/',
+  base: "/Headphone/",
    build: {
     outDir: 'build/client'
   }
