@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "catalog": "Katalog",
+    "about": "Über uns",
+    "shipping": "Versand",
+    "contacts": "Kontakte"
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "empty": "Ihr Warenkorb ist leer",
+    "total": "Gesamtbetrag",
+    "checkout": "Zur Kasse",
+    "order_success": "Bestellung erfolgreich aufgegeben!",
+    "add_to_cart": "In den Warenkorb",
+  "added": "Hinzugefügt ✓"
+  },
+  "footer": {
+    "description": "Die besten Lösungen für Ihren Komfort seit 2024.",
+    "clients": "Für Kunden",
+    "support": "Unterstützung",
+    "contacts": "Kontakte",
+    "privacy": "Datenschutzrichtlinie",
+    "returns": "Rückgabe & Erstattung",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "hero": { 
+    "badge_new": "Neuerscheinung",
+    "button_view": "Produkt ansehen"
+  },
+  "features": {
+    "video_label": "Videobewertung",
+    "title": "Technologien fürs Leben",
+    "description": "Erfahren Sie mehr darüber, wie unsere Geräte die perfekte Balance zwischen Feuchtigkeit und Frische in Ihrem Zuhause schaffen.",
+    "list": {
+      "item_1": "Intelligenter Energieverbrauch",
+      "item_2": "Umweltfreundliche Materialien"
+    }
+  },
+  "contacts": {
+    "title": "Kontaktieren Sie uns",
+    "name_label": "Ihr Name",
+    "comments_label": "Kommentare",
+    "consent": "Ich stimme der Verarbeitung personenbezogener Daten zu",
+    "send_button": "Nachricht senden",
+    "socials_title": "Unsere sozialen Medien"
+  },
+  "about": {
+    "title": "Über uns",
+    "intro_text": "Wir sind ein Team von Fachleuten, die sich der Entwicklung innovativer Lösungen für Ihren Komfort verschrieben haben. Mit jahrelanger Erfahrung erwecken wir die kühnsten Ideen im Bereich tragbarer Geräte zum Leben. Unsere Mission ist es, moderne Technologie für jeden Kunden zugänglich und komfortabel zu machen.",
+    "achievements_title": "Unsere Erfolge",
+    "trust_title": "Man vertraut uns"
+  },
+  "reviews": {
+    "title": "Kundenbewertungen",
+    "items": [
+      {
+        "name": "Oleksandr",
+        "text": "Der beste Luftbefeuchter für das Büro. Arbeitet sehr leise.",
+        "rating": 5
+      },
+      {
+        "name": "Maria",
+        "text": "Der Ventilator hilft wirklich auf Reisen. Hochwertiger Kunststoff.",
+        "rating": 5
+      }
+    ]
+  },
+  "product_details": {
+    "status_available": "Auf Lager",
+    "choose_color": "Farbe wählen:",
+    "why_title": "Warum dieses Produkt?",
+    "video_title": "Videobewertung und Funktionen"
+  },
+  "catalog": {
+    "title": "Vollständiger Katalog",
+    "description": "Wählen Sie Ihr ideales Gerät für Komfort und Frische in Ihrem Zuhause",
+    "buy": "Jetzt kaufen",
+    "currency": "€",
+    "new": "Neu",
+    "products": {
+      "aquamist-desktop": {
+        "name": "AquaMist Desktop",
+        "price": 19.50,
+        "description": "Kompakter Luftbefeuchter mit LED-Beleuchtung und leisem Betrieb.",
+        "benefits": [
+          "Ultraschall-Befeuchtung für gesunden Schlaf und produktives Arbeiten.",
+          "Sanfte LED-Beleuchtung für eine gemütliche Abendatmosphäre.",
+          "Geräuscharmer Betrieb, der nicht при работе oder Ruhe stört.",
+          "Stilvolles Design, das perfekt in jedes Büro oder Zuhause passt."
+        ]
+      },
+      "nanobreeze-pocket": {
+        "name": "NanoBreeze Pocket",
+        "price": 10.35,
+        "description": "Taschenventilator mit bis zu 8 Stunden Laufzeit pro Ladung.",
+        "benefits": [
+          "Ultraleichtes Gehäuse, das sogar in eine kleine Tasche passt.",
+          "Bis zu 8 Stunden Akkulaufzeit durch energieeffizienten Akku.",
+          "Sicherheitsflügel, die bei Berührung automatisch stoppen.",
+          "Laden über Standard-USB per Powerbank oder Laptop."
+        ]
+      },
+      "frostyhand-v2": {
+        "name": "FrostyHand V2",
+        "price": 13.80,
+        "description": "Leistungsstarker Handventilator mit drei Geschwindigkeitsstufen.",
+        "benefits": [
+          "Drei Geschwindigkeitsstufen für individuelle Kühlung.",
+          "Ergonomischer Griff für komfortables Halten über lange Zeit.",
+          "Starker Luftstrom zur sofortigen Erfrischung bei Hitze.",
+          "Verbesserte Stabilität für den Betrieb auf ebenen Flächen."
+        ]
+      },
+      "cloudhumid-mini": {
+        "name": "CloudHumid Mini",
+        "price": 27.60,
+        "description": "Ultraschall-Luftbefeuchter mit Aromadiffusor-Funktion.",
+        "benefits": [
+          "Integrierter Aromadiffusor für angenehmen Duft im Raum.",
+          "Automatische Abschaltung bei niedrigem Wasserstand.",
+          "Feiner Nebel, der keine Wassertropfen auf Möbeln hinterlässt.",
+          "Austauschbare Filter für langen und sauberen Betrieb."
+        ]
+      },
+      "stormpocket-turbo": {
+        "name": "StormPocket Turbo",
+        "price": 17.25,
+        "description": "Turbo-Ventilator für extreme Kühlung bei Hitze.",
+        "benefits": [
+          "Turbo-Motor für maximal starken Luftstrom.",
+          "Metallschutzbeschichtung gegen versehentliche Beschädigungen.",
+          "Schnelllademodus für aktive Reisende.",
+          "Spezielle Halterung zum Aufhängen an Rucksack oder Tasche."
+        ]
+      },
+      "aquaglow-portable": {
+        "name": "AquaGlow Portable",
+        "price": 21.85,
+        "description": "Tragbarer Luftbefeuchter mit integriertem 2000mAh Akku.",
+        "benefits": [
+          "Vollständige Mobilität ohne Steckdose dank 2000mAh Akku.",
+          "Ladestandsanzeige, damit Sie immer wissen, wann Sie laden müssen.",
+          "Doppelsprühen für schnelles Erreichen optimaler Luftfeuchtigkeit.",
+          "Kippschutz durch gummierten Boden."
+        ]
+      }
+    }
+  }
+}

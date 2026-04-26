@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Domů",
+    "catalog": "Katalog",
+    "about": "O nás",
+    "shipping": "Doprava",
+    "contacts": "Kontakty"
+  },
+  "cart": {
+    "title": "Košík",
+    "empty": "Váš košík je prázdný",
+    "total": "Celkem k úhradě",
+    "checkout": "Dokončit objednávku",
+    "order_success": "Objednávka byla úspěšně vytvořena!",
+    "add_to_cart": "Přidat do košíku",
+  "added": "Přidáno ✓"
+  },
+  "footer": {
+    "description": "Nejlepší řešení pro váš komfort již od roku 2024.",
+    "clients": "Pro klienty",
+    "support": "Podpora",
+    "contacts": "Kontakty",
+    "privacy": "Ochrana soukromí",
+    "returns": "Vrácení zboží",
+    "rights": "Všechna práva vyhrazena"
+  },
+  "hero": { 
+    "badge_new": "Novinka",
+    "button_view": "Zobrazit produkt"
+  },
+  "features": {
+    "video_label": "Video recenze",
+    "title": "Technologie pro život",
+    "description": "Zjistěte více o tom, jak naše zařízení vytvářejí dokonalou rovnováhu vlhkosti a svěžesti ve vašem domově.",
+    "list": {
+      "item_1": "Chytrá spotřeba energie",
+      "item_2": "Ekologicky šetrné materiály"
+    }
+  },
+  "contacts": {
+    "title": "Kontaktujte nás",
+    "name_label": "Vaše jméno",
+    "comments_label": "Komentáře",
+    "consent": "Souhlasím se zpracováním osobních údajů",
+    "send_button": "Odeslat zprávu",
+    "socials_title": "Naše sociální sítě"
+  },
+  "about": {
+    "title": "O nás",
+    "intro_text": "Jsme tým profesionálů, kteří usilují o vytváření inovativních řešení pro váš komfort. Díky dlouholetým zkušenostem realizujeme ty nejodvážnější nápady v oblasti přenosných zařízení. Naším posláním je zpřístupnit moderní technologie a učinit je pohodlnými pro každého zákazníka.",
+    "achievements_title": "Naše úspěchy",
+    "trust_title": "Důvěřují nám"
+  },
+  "reviews": {
+    "title": "Recenze zákazníků",
+    "items": [
+      {
+        "name": "Alexandr",
+        "text": "Nejlepší zvlhčovač do kanceláře. Pracuje velmi tiše.",
+        "rating": 5
+      },
+      {
+        "name": "Marie",
+        "text": "Ventilátor mě na cestách opravdu zachraňuje. Kvalitní plast.",
+        "rating": 5
+      }
+    ]
+  },
+  "product_details": {
+  "status_available": "Skladem",
+  "choose_color": "Vyberte barvu:",
+  "why_title": "Proč si vybrat tento produkt?",
+  "video_title": "Video recenze a funkce"
+},
+  "catalog": {
+    "title": "Kompletní katalog",
+    "description": "Vyberte si ideální zařízení pro komfort a svěžest ve vašem domově",
+    "buy": "Koupit",
+    "currency": "Kč",
+    "new": "Novinka",
+    "products": {
+  "aquamist-desktop": {
+    "name": "AquaMist Desktop",
+    "price": 500,
+    "description": "Kompaktní zvlhčovač s LED podsvícením a nízkou hlučností.",
+    "benefits": [
+      "Ultrazvukové zvlhčování pro zdravý spánek a produktivní práci.",
+      "Měkké LED podsvícení, které večer vytváří útulnou atmosféru.",
+      "Nízká hladina hluku, která neodvádí pozornost od úkolů nebo odpočinku.",
+      "Stylový design, který se skvěle hodí do každého kancelářského nebo domácího interiéru."
+    ]
+  },
+  "nanobreeze-pocket": {
+    "name": "NanoBreeze Pocket",
+    "price": 265,
+    "description": "Kapesní ventilátor, který vydrží až 8 hodin na jedno nabití.",
+    "benefits": [
+      "Ultralehké tělo, které se vejde i do malé kapsy.",
+      "Až 8 hodin výdrže baterie díky energeticky účinnému akumulátoru.",
+      "Bezpečnostní lopatky, které se při dotyku automaticky zastaví.",
+      "Nabíjení přes standardní USB z powerbanky nebo notebooku."
+    ]
+  },
+  "frostyhand-v2": {
+    "name": "FrostyHand V2",
+    "price": 350,
+    "description": "Výkonný ruční ventilátor se třemi režimy rychlosti.",
+    "benefits": [
+      "Tři režimy rychlosti pro individuální nastavení chlazení.",
+      "Ergonomická rukojeť pro pohodlné držení po dlouhou dobu.",
+      "Silný proud vzduchu schopný vás v horku okamžitě osvěžit.",
+      "Zlepšená stabilita konstrukce pro použití na rovných površích."
+    ]
+  },
+  "cloudhumid-mini": {
+    "name": "CloudHumid Mini",
+    "price": 705,
+    "description": "Ultrazvukový zvlhčovač s funkcí aroma difuzéru.",
+    "benefits": [
+      "Vestavěný aroma difuzér pro vytvoření příjemné vůně v místnosti.",
+      "Automatické vypnutí při nízké hladině vody.",
+      "Jemná mlha, která nezanechává kapky vody na nábytku.",
+      "Vyměnitelné filtry pro dlouhotrvající a čistý provoz."
+    ]
+  },
+  "stormpocket-turbo": {
+    "name": "StormPocket Turbo",
+    "price": 440,
+    "description": "Turbo ventilátor pro extrémní chlazení v horku.",
+    "benefits": [
+      "Turbo motor pro maximálně silné proudění vzduchu.",
+      "Kovový ochranný povlak zabraňující náhodnému poškození.",
+      "Režim rychlého nabíjení pro aktivní cestovatele.",
+      "Speciální spona pro zavěšení na batoh nebo tašku."
+    ]
+  },
+  "aquaglow-portable": {
+    "name": "AquaGlow Portable",
+    "price": 560,
+    "description": "Přenosný zvlhčovač s vestavěnou baterií 2000 mAh.",
+    "benefits": [
+      "Úplná mobilita bez nutnosti připojení do zásuvky díky 2000mAh baterii.",
+      "Indikátor stavu baterie, abyste vždy věděli, kdy je třeba dobít.",
+      "Dvojitý sprej pro rychlé dosažení komfortní úrovně vlhkosti.",
+      "Ochrana proti převrácení díky pogumované základně."
+    ]
+  }
+}
+  }
+}

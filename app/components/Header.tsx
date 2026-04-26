@@ -4,9 +4,10 @@ import { useCart } from "../context/CartContext";
 import { Cart } from "./Cart";
 import * as Icons from "../icons";
 import * as S from "../styles/header.style"; 
-// import { LanguageSelector } from "./LanguageSelector";
 
-// import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from "./LanguageSelector";
+
+import { useTranslation } from 'react-i18next';
 
 // function LanguagePicker() {
 //   const { i18n } = useTranslation();
@@ -30,7 +31,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { cartItems } = useCart();
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -65,17 +66,18 @@ export function Header() {
 </S.Logo>
 
           <S.Nav>
-             <S.NavLink to="/">Головна</S.NavLink>
+             {/* <S.NavLink to="/">Головна</S.NavLink>
             <S.NavLink to="/catalog">Каталог</S.NavLink>
             <S.NavLink to="/about">Про нас</S.NavLink>
-            <S.NavLink to="/contacts">Контакти</S.NavLink>
-            {/* <S.NavLink to="/">{t('nav.home')}</S.NavLink>
+            <S.NavLink to="/contacts">Контакти</S.NavLink> */}
+            <S.NavLink to="/">{t('nav.home')}</S.NavLink>
             <S.NavLink to="/catalog">{t('nav.catalog')}</S.NavLink>
-            <S.NavLink to="/reviews">Про нас</S.NavLink> */}
+            <S.NavLink to="/about">{t('nav.about')}</S.NavLink>
+            <S.NavLink to="/contacts">{t('nav.contacts')}</S.NavLink>
           </S.Nav>
 {/* <LanguageSelector/> */}
           <S.Actions>
-            {/* {LanguagePicker()} */}
+            <LanguageSelector />
             <S.CartBtn onClick={() => setIsCartOpen(true)}>
               🛒 {cartItems.length > 0 && <S.Badge>{cartItems.length}</S.Badge>}
             </S.CartBtn>
@@ -124,13 +126,14 @@ export function Header() {
 </S.MobileHeader>
 
               <S.MobileNav>
-                <S.MobileLink to="/" onClick={closeMenu}>Головна</S.MobileLink>
+                {/* <S.MobileLink to="/" onClick={closeMenu}>Головна</S.MobileLink>
                 <S.MobileLink to="/catalog" onClick={closeMenu}>Каталог</S.MobileLink>
                 <S.MobileLink to="/about" onClick={closeMenu}>Про нас</S.MobileLink>
-                <S.MobileLink to="/contacts" onClick={closeMenu}>Контакти</S.MobileLink>
-                {/* <S.MobileLink to="/" onClick={closeMenu}>{t('nav.home')}</S.MobileLink>
+                <S.MobileLink to="/contacts" onClick={closeMenu}>Контакти</S.MobileLink> */}
+                <S.MobileLink to="/" onClick={closeMenu}>{t('nav.home')}</S.MobileLink>
                 <S.MobileLink to="/catalog" onClick={closeMenu}>{t('nav.catalog')}</S.MobileLink>
-                <S.MobileLink to="/reviews" onClick={closeMenu}>Про нас</S.MobileLink> */}
+                <S.MobileLink to="/about" onClick={closeMenu}>{t('nav.about')}</S.MobileLink>
+                <S.MobileLink to="/contacts" onClick={closeMenu}>{t('nav.contacts')}</S.MobileLink>
               </S.MobileNav>
               <S.MobileSocials>
   <S.SocialIcon href="https://instagram.com" target="_blank" rel="noreferrer">

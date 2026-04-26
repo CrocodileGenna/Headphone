@@ -2,10 +2,12 @@ import { AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
 import * as S from "../styles/cart.style";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
   const { cartItems, removeFromCart, totalPrice } = useCart();
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -38,14 +40,14 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             <S.Header>
-              <S.Title>Кошик ({cartItems.length})</S.Title>
+              <S.Title>{t('cart.title') || 'Кошик'} ({cartItems.length})</S.Title>
               <S.CloseBtn onClick={onClose}>&times;</S.CloseBtn>
             </S.Header>
 
             <S.Content>
               {cartItems.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8' }}>
-                  Кошик порожній
+                  {t('cart.empty') || 'Кошик порожній'}
                 </div>
               ) : (
                 cartItems.map((item, index) => (
@@ -63,14 +65,14 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
 
             <S.Footer>
               <S.TotalRow>
-                <span>Всього к оплаті:</span>
+                <span>{t('cart.total') || 'Всього к оплаті'}:</span>
                 <strong style={{ fontSize: '1.2rem' }}>{totalPrice} ₴</strong>
               </S.TotalRow>
               <S.CheckoutBtn 
                 disabled={cartItems.length === 0}
-                onClick={() => alert('Замовлення оформлено!')}
+                onClick={() => alert(t('cart.order_success'))}
               >
-                Оформити замовлення
+                {t('cart.checkout') || 'Оформити замовлення'}
               </S.CheckoutBtn>
             </S.Footer>
           </S.CartPanel>

@@ -9,6 +9,7 @@ import {
 import { Suspense, useEffect } from "react";
 import { Header } from "./components/Header"
 import { Footer } from "./components/Footer";
+import { ScrollToTop } from './components/ScrollToTop';
 import type { Route } from "./+types/root";
 import "./styles/app.css";
 import { ThemeProvider } from "@emotion/react";
@@ -88,6 +89,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {children}
           <Footer />
           </Suspense>
+          <ScrollToTop />
           <ScrollRestoration />
           <Scripts />
         </CartProvider>

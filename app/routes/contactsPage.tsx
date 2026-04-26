@@ -1,8 +1,9 @@
 import { useState } from "react";
 import * as S from "../styles/contactsPage.style";
 import { Container, SectionTitle } from "../styles/aboutPage.style"; // Используем общие стили заголовков
-
+import { useTranslation } from 'react-i18next';
 export default function ContactsPage() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({ name: "", email: "", message: "", agree: false });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -25,14 +26,14 @@ export default function ContactsPage() {
   return (
     <S.ContactsWrapper>
       <Container>
-        <SectionTitle>Зв'яжіться з нами</SectionTitle>
+        <SectionTitle>{t('contacts.title')}</SectionTitle>
         
         <S.ContactGrid>
           {/* 1. БЛОК С ФОРМОЙ */}
           <S.FormCard>
             <form onSubmit={handleSubmit}>
               <S.InputGroup>
-                <label>Ваше ім'я</label>
+                <label>{t('contacts.name_label')}</label>
                 <input 
                   type="text" 
                   placeholder="Введіть ім'я" 
@@ -52,7 +53,7 @@ export default function ContactsPage() {
               </S.InputGroup>
 
               <S.InputGroup>
-                <label>Коментарі</label>
+                <label>{t('contacts.comments_label')}</label>
                 <textarea 
                   placeholder="Ваше повідомлення..." 
                   rows={4} // Высота поля
@@ -74,7 +75,7 @@ export default function ContactsPage() {
                   id="agree" 
                   onChange={(e) => setFormData({...formData, agree: e.target.checked})}
                 />
-                <label htmlFor="agree">Я даю згоду на обробку персональних даних</label>
+                <label htmlFor="agree">{t('contacts.consent')}</label>
               </S.CheckboxGroup>
 
               <button 
@@ -84,14 +85,14 @@ export default function ContactsPage() {
                   background: '#2563eb', color: '#fff', border: 'none', fontWeight: 700, cursor: 'pointer'
                 }}
               >
-                Надіслати повідомлення
+                {t('contacts.send_button')}
               </button>
             </form>
           </S.FormCard>
 
           {/* 2. БЛОК СОЦСЕТЕЙ */}
           <S.SocialSection>
-            <h3 style={{marginBottom: '10px'}}>Наші соцмережі</h3>
+            <h3 style={{marginBottom: '10px'}}>{t('contacts.socials_title')}</h3>
             {socials.map((soc) => (
               <S.SocialLink key={soc.name} href={soc.url} target="_blank">
                 <span>{soc.icon}</span>

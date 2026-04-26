@@ -21,9 +21,9 @@ export default function HomePage() {
     <main>
       <Hero />
       <FeaturedProduct product={mainProduct} />
-      <InfoSection />
-      <FeaturedProduct product={mainProduct1} />
       <ProductOverview />
+      {/* <InfoSection /> */}
+      <FeaturedProduct product={mainProduct1} />
       <Reviews/>
     </main>
   );

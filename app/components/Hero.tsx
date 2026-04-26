@@ -59,6 +59,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import products from '../data/products.json'; // Путь к вашему json
 import * as S from "../styles/hero.style";
+import { useTranslation } from 'react-i18next';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -69,6 +70,7 @@ export function Hero() {
   const sliderProducts = products.filter(product => 
     allowedProducts.includes(product.name)
   );
+  const { t } = useTranslation();
   return (
     <S.HeroSection>
        <Swiper
@@ -101,7 +103,7 @@ export function Hero() {
               <S.Wrapper>
                 <S.TextContent>
                   {(product.name === "CloudHumid Mini") && (
-            <S.Badge>Новинка</S.Badge>
+            <S.Badge>{t('hero.badge_new')}</S.Badge>
           )}
                   <S.Title>
                     {product.name}
@@ -112,7 +114,7 @@ export function Hero() {
                   
                 </S.TextContent>
                 <S.Button to={`/product/${product.slug}`}>
-                    Перейти до продукту
+                   {t('hero.button_view')}
                   </S.Button>
               </S.Wrapper>
             </S.SlideContent>

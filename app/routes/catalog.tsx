@@ -20,15 +20,17 @@
 
 import products from "../data/products.json";
 import { ProductCard } from "../components/ProductCard";
-import * as S from "../styles/catalog.style"; // Импортируем стили
+import * as S from "../styles/catalog.style"; 
+import { useTranslation } from 'react-i18next';
 
 export default function CatalogPage() {
+    const { t } = useTranslation();
   return (
     <S.CatalogSection>
       <S.Header>
-        <S.Title>Повний каталог</S.Title>
+        <S.Title>{t('catalog.title')}</S.Title>
         <S.Description>
-          Оберіть свій ідеальний пристрій для комфорту та свіжості у вашому домі
+          {t('catalog.description')}
         </S.Description>
       </S.Header>
       

@@ -55,12 +55,12 @@
 import { useState } from "react"; 
 import { useCart } from "../context/CartContext";
 // import { Link } from "react-router";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import * as S from "../styles/card.style";
 
 export function ProductCard({ product }: { product: any }) {
   const { addToCart } = useCart();
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   // const translationPath = `catalog.product_${product.id}`;
   const [selectedVariant, setSelectedVariant] = useState(product.variants?.[0] || { img: product.image });
 const [isAnimated, setIsAnimated] = useState(false);
@@ -94,7 +94,7 @@ const [isAnimated, setIsAnimated] = useState(false);
       </S.ImageBox>
       
       <S.Title>{product.name}</S.Title>
-      <S.Description>{product.description}</S.Description>
+      <S.Description>{t(`catalog.products.${product.slug}.description`)}</S.Description>
 
       {product.variants && (
         <S.ColorVariants>
@@ -111,9 +111,9 @@ const [isAnimated, setIsAnimated] = useState(false);
       )}
       
       <S.Footer>
-        <S.Price>{product.price} ₴</S.Price>
+        <S.Price>{t(`catalog.products.${product.slug}.price`)}{t('catalog.currency') }</S.Price>
         <S.BuyButton onClick={handleAddToCart} isAnimated={isAnimated}>
-          <S.ButtonText>Купити</S.ButtonText>
+          <S.ButtonText>{t('catalog.buy') }</S.ButtonText>
           <span style={{ marginLeft: '4px' }}>🛒</span> 
         </S.BuyButton>
       </S.Footer>

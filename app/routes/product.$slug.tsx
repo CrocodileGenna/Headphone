@@ -124,17 +124,25 @@ import { useParams } from "react-router";
 import { useCart } from "../context/CartContext";
 import products from "../data/products.json"; 
 import * as S from "../styles/product.$slug."; 
+import { useTranslation } from "react-i18next";
 
 export default function ProductPage() {
   const { slug } = useParams();
   const { addToCart } = useCart();
   const [isAnimated, setIsAnimated] = useState(false);
+  const { t } = useTranslation();
+
+ 
 
   const product = products.find(p => p.slug === slug);
 
   const [selectedVariant, setSelectedVariant] = useState(
     product?.variants?.[0] || { color: "", img: product?.image }
   );
+
+ const benefits = product 
+    ? (t(`catalog.products.${product.slug}.benefits`, { returnObjects: true }) as string[])
+    : [];
 
   if (!product) {
     return <div className="text-center py-20 text-xl font-bold">Товар не знайдено</div>;
@@ -172,12 +180,12 @@ export default function ProductPage() {
             </S.ImageBox>
             
             <S.InfoBox>
-              <S.StatusTag available={true}>В наявності</S.StatusTag>
+              <S.StatusTag available={true}>{t('product_details.status_available')}</S.StatusTag>
               <S.Title>{product.name}</S.Title>
-              <S.Price>{product.price} ₴</S.Price>
+              <S.Price>{t(`catalog.products.${product.slug}.price`)} {t('catalog.currency') }</S.Price>
               
               <div>
-                <p style={{marginBottom: '10px', fontWeight: 600}}>Оберіть колір:</p>
+                <p style={{marginBottom: '10px', fontWeight: 600}}>{t('product_details.choose_color')}:</p>
                 <S.ColorGrid>
                   {product.variants.map((v, i) => (
                     <S.ColorCircle 
@@ -191,8 +199,8 @@ export default function ProductPage() {
               </div>
 
               <S.BuyButton $isAnimated={isAnimated} onClick={handleAddToCart}>
-                {isAnimated ? "Додано ✓" : "Додати в кошик"}
-              </S.BuyButton>
+  {isAnimated ? t('cart.added') : t('cart.add_to_cart')}
+</S.BuyButton>
             </S.InfoBox>
           </S.MainGrid>
         </S.Container>
@@ -208,12 +216,15 @@ export default function ProductPage() {
               style={{width: '100%', borderRadius: '20px'}} 
             />
             <div>
-              <h2 style={{fontSize: '2rem', marginBottom: '30px'}}>Чому цей продукт?</h2>
+              <h2 style={{fontSize: '2rem', marginBottom: '30px'}}>{t('product_details.why_title')}</h2>
               <S.List>
-                <S.ListItem>Енергоефективність нового покоління для тривалої роботи.</S.ListItem>
+                {/* <S.ListItem>Енергоефективність нового покоління для тривалої роботи.</S.ListItem>
                 <S.ListItem>Екологічні матеріали, приємні на дотик та безпечні для здоров'я.</S.ListItem>
                 <S.ListItem>Компактний розмір, що дозволяє брати пристрій з собою куди завгодно.</S.ListItem>
-                <S.ListItem>Інтуїтивне керування однією кнопкою без зайвих налаштувань.</S.ListItem>
+                <S.ListItem>Інтуїтивне керування однією кнопкою без зайвих налаштувань.</S.ListItem> */}
+                {Array.isArray(benefits) && benefits.map((benefit, index) => (
+                  <S.ListItem key={index}>{benefit}</S.ListItem>
+                ))}
               </S.List>
             </div>
           </S.InfoGraphicGrid>
@@ -224,7 +235,7 @@ export default function ProductPage() {
       <S.VideoSection>
         <S.Container>
           <h2 style={{textAlign: 'center', fontSize: '2rem', marginBottom: '40px'}}>
-            Відеоогляд та можливості
+            {t('product_details.video_title')}
           </h2>
           <S.VideoWrapper>
             <iframe

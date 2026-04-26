@@ -21,7 +21,7 @@
 // }
 import * as S from "../styles/aboutPage.style";
 import { Reviews } from "../components/Reviews"; // Используем ваш готовый компонент
-
+import { useTranslation } from 'react-i18next';
 // Данные (в будущем можно вынести в JSON)
 const awards = [
   "/photos/award1.jpg",
@@ -37,16 +37,15 @@ const partners = [
 ];
 
 export default function AboutPage() {
+  const { t } = useTranslation();
   return (
     <S.AboutWrapper>
       {/* 1. Заголовок и описание */}
       <S.Section>
         <S.Container>
-          <S.SectionTitle>Про нас</S.SectionTitle>
+          <S.SectionTitle>{t('about.title')}</S.SectionTitle>
           <S.IntroText>
-            Ми — команда професіоналів, що прагне створювати інноваційні рішення для вашого комфорту. 
-            Завдяки багаторічному досвіду ми втілюємо у життя найсміливіші ідеї у сфері портативних девайсів. 
-            Наша місія — зробити сучасні технології доступними та зручними для кожного клієнта.
+            {t('about.intro_text')}
           </S.IntroText>
         </S.Container>
       </S.Section>
@@ -54,7 +53,7 @@ export default function AboutPage() {
       {/* 2. Наші досягнення (Грамоти) */}
       <S.Section>
         <S.Container>
-          <S.SectionTitle>Наші досягнення</S.SectionTitle>
+          <S.SectionTitle>{t('about.achievements_title')}</S.SectionTitle>
           <S.AwardsGrid>
             {awards.map((src, i) => (
               <img key={i} src={src} alt={`Грамота ${i + 1}`} />
@@ -66,7 +65,7 @@ export default function AboutPage() {
       {/* 3. Партнери */}
       <S.Section>
         <S.Container>
-          <S.SectionTitle>Нам довіряють</S.SectionTitle>
+          <S.SectionTitle>{t('about.trust_title')}</S.SectionTitle>
           <S.PartnersFlex>
             {partners.map((partner, i) => (
               <img key={i} src={partner.logo} alt={partner.name} title={partner.name} />

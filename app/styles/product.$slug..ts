@@ -347,9 +347,9 @@ export const VideoWrapper = styled.div`
 // Повторные стили (Title, ColorGrid и т.д.) оставить из старого файла...
 export const Title = styled.h2` font-size: 2.5rem; color: #1e293b; `;
 export const Price = styled.div` font-size: 1.8rem; font-weight: 700; `;
-export const ColorGrid = styled.div` display: flex; gap: 12px; `;
+export const ColorGrid = styled.div` display: flex; gap: 12px;`;
 export const ColorCircle = styled.div<{ bgColor: string; isActive: boolean }>`
-  width: 35px; height: 35px; border-radius: 50%; background: ${props => props.bgColor};
+  width: 35px; height: 35px; border-radius: 50%; background: ${props => props.bgColor}; box-shadow:  ${props => props.theme.shadows.card};
   cursor: pointer; border: 2px solid ${props => props.isActive ? '#2563eb' : 'transparent'};
   outline: 2px solid #fff;
 `;

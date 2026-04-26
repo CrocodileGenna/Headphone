@@ -22,7 +22,7 @@ export const theme = {
   },
   
   shadows: {
-    card: "0 10px 25px rgba(0,0,0,0.05)",
+    card: "0 10px 25px rgba(0, 0, 0, 0.08)",
     button: "0 4px 12px rgba(37, 99, 235, 0.2)",
   },
 

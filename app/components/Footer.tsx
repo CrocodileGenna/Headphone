@@ -1,6 +1,8 @@
 import * as S from "../styles/footer.style";
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -8,32 +10,32 @@ export function Footer() {
       <S.Grid>
         <S.BrandColumn>
           <S.Logo to="/">
-            POCKET
-            <span>.FRESH</span>
+            chillax
+            <span>cooling</span>
           </S.Logo>
           <S.BrandText>
-            Найкращі рішення для вашого комфорту з 2024 року.
+            {t('footer.description')}
           </S.BrandText>
         </S.BrandColumn>
 
-        <div>
-          <S.ColumnTitle>Клієнтам</S.ColumnTitle>
+        {/* <div>
+          <S.ColumnTitle>{t('footer.clients')}</S.ColumnTitle>
           <S.Nav>
-            <S.StyledLink to="/catalog">Каталог</S.StyledLink>
-            <S.StyledLink to="/shipping">Доставка</S.StyledLink>
+            <S.StyledLink to="/catalog">{t('footer.catalog')}</S.StyledLink>
+            <S.StyledLink to="/shipping">{t('footer.shipping')}</S.StyledLink>
+          </S.Nav>
+        </div> */}
+
+        <div>
+          <S.ColumnTitle>{t('footer.support')}</S.ColumnTitle>
+          <S.Nav>
+            <S.StyledLink to="/privacy">{t('footer.privacy')}</S.StyledLink>
+            <S.StyledLink to="/returns">{t('footer.returns')}</S.StyledLink>
           </S.Nav>
         </div>
 
         <div>
-          <S.ColumnTitle>Підтримка</S.ColumnTitle>
-          <S.Nav>
-            <S.StyledLink to="/privacy">Приватність</S.StyledLink>
-            <S.StyledLink to="/returns">Повернення</S.StyledLink>
-          </S.Nav>
-        </div>
-
-        <div>
-          <S.ColumnTitle>Контакти</S.ColumnTitle>
+          <S.ColumnTitle>{t('footer.contacts') ||`Контакти`}</S.ColumnTitle>
           <S.ContactInfo>
             <p className="address">м. Дніпро, пр. Науки</p>
             <p className="email">info@pocketfresh.ua</p>
@@ -42,7 +44,7 @@ export function Footer() {
       </S.Grid>
       
       <S.BottomBar>
-        <p>&copy; {year} Pocket.Fresh | Всі права захищені</p>
+        <p>&copy; {year} {t('footer.rights') || `Pocket.Fresh | Всі права захищені`}</p>
       </S.BottomBar>
     </S.FooterContainer>
   );

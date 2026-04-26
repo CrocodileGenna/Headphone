@@ -10,7 +10,7 @@ i18n
   .init({
     fallbackLng: 'ua', 
     
-    supportedLngs: ['ua', 'en', 'pl', 'de', 'fr'], 
+    supportedLngs: ['ua', 'us', 'pl', 'de', 'cs', 'hi'], 
     
     detection: {
       order: ['localStorage', 'cookie', 'htmlTag', 'path', 'subdomain'],

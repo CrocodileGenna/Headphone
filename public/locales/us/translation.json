@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "about": "About Us",
+    "shipping": "Shipping",
+    "contacts": "Contact Us"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Order Total",
+    "checkout": "Place Order",
+    "order_success": "Order placed successfully!",
+    "add_to_cart": "Add to Cart",
+  "added": "Added ✓"
+  },
+  "footer": {
+    "description": "Premium comfort solutions since 2024.",
+    "clients": "For Customers",
+    "support": "Support",
+    "contacts": "Contact",
+    "privacy": "Privacy Policy",
+    "returns": "Returns & Exchanges",
+    "rights": "All rights reserved"
+  },
+  "hero": { 
+    "badge_new": "New Release",
+    "button_view": "Shop Now"
+  },
+  "features": {
+    "video_label": "Video Review",
+    "title": "Smart Tech for Living",
+    "description": "Discover how our devices maintain the perfect balance of humidity and freshness in your home.",
+    "list": {
+      "item_1": "Smart energy efficiency",
+      "item_2": "Eco-friendly materials"
+    }
+  },
+  "contacts": {
+    "title": "Get in Touch",
+    "name_label": "Your Name",
+    "comments_label": "Comments",
+    "consent": "I agree to the processing of my personal data",
+    "send_button": "Send Message",
+    "socials_title": "Follow Us"
+  },
+  "about": {
+    "title": "Our Story",
+    "intro_text": "We are a team of experts dedicated to creating innovative solutions for your lifestyle. With years of experience, we bring cutting-edge ideas to the world of portable devices. Our mission is to make modern technology accessible and convenient for everyone.",
+    "achievements_title": "Our Milestones",
+    "trust_title": "Trusted by Thousands"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "items": [
+      {
+        "name": "Alexander",
+        "text": "The best humidifier for my home office. Super quiet operation.",
+        "rating": 5
+      },
+      {
+        "name": "Maria",
+        "text": "This fan is a lifesaver for travel. Very durable build quality.",
+        "rating": 5
+      }
+    ]
+  },
+  "product_details": {
+    "status_available": "In Stock",
+    "choose_color": "Choose a color:",
+    "why_title": "Why Choose This Product?",
+    "video_title": "Video Review & Features"
+  },
+  "catalog": {
+    "title": "Full Catalog",
+    "description": "Choose your perfect device for a fresher, more comfortable home",
+    "buy": "Add to Cart",
+    "currency": "$",
+    "new": "New",
+  "products": {
+  "aquamist-desktop": {
+    "name": "AquaMist Desktop",
+    "price": 20.75,
+    "description": "Compact humidifier with LED lighting and low noise level.",
+    "benefits": [
+      "Ultrasonic humidification for healthy sleep and productive work.",
+      "Soft LED lighting that creates a cozy evening atmosphere.",
+      "Low noise level that won't distract you from tasks or rest.",
+      "Stylish design that fits perfectly into any office or home interior."
+    ]
+  },
+  "nanobreeze-pocket": {
+    "name": "NanoBreeze Pocket",
+    "price": 10.99,
+    "description": "Pocket fan that lasts up to 8 hours on a single charge.",
+    "benefits": [
+      "Ultralight body that fits even in a small pocket.",
+      "Up to 8 hours of battery life thanks to an energy-efficient battery.",
+      "Safety blades that automatically stop when touched.",
+      "Charges via standard USB from a power bank or laptop."
+    ]
+  },
+  "frostyhand-v2": {
+    "name": "FrostyHand V2",
+    "price": 14.65,
+    "description": "Powerful handheld fan with three speed modes.",
+    "benefits": [
+      "Three speed modes for personalized cooling adjustment.",
+      "Ergonomic handle for comfortable holding over long periods.",
+      "Powerful airflow capable of instantly refreshing you in the heat.",
+      "Improved construction stability for use on flat surfaces."
+    ]
+  },
+  "cloudhumid-mini": {
+    "name": "CloudHumid Mini",
+    "price": 29.30,
+    "description": "Ultrasonic humidifier with aroma diffuser function.",
+    "benefits": [
+      "Built-in aroma diffuser to create a pleasant scent in the room.",
+      "Automatic shut-off when water level is low.",
+      "Fine mist that doesn't leave water droplets on furniture.",
+      "Replaceable filters for long-lasting and clean operation."
+    ]
+  },
+  "stormpocket-turbo": {
+    "name": "StormPocket Turbo",
+    "price": 18.30,
+    "description": "Turbo fan for extreme cooling in the heat.",
+    "benefits": [
+      "Turbo motor for maximum powerful airflow.",
+      "Metal protective coating to prevent accidental damage.",
+      "Fast charging mode for active travelers.",
+      "Special clip for hanging on a backpack or bag."
+    ]
+  },
+  "aquaglow-portable": {
+    "name": "AquaGlow Portable",
+    "price": 23.20,
+    "description": "Portable humidifier with built-in 2000mAh battery.",
+    "benefits": [
+      "Complete mobility without being tied to an outlet via a 2000mAh battery.",
+      "Battery level indicator so you always know when to recharge.",
+      "Dual spray for quickly achieving comfortable humidity levels.",
+      "Tip-over protection thanks to the rubberized base."
+    ]
+  }
+}
+  }
+}

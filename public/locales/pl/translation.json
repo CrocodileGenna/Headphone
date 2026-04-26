@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "catalog": "Katalog",
+    "about": "O nas",
+    "shipping": "Dostawa",
+    "contacts": "Kontakt"
+  },
+  "cart": {
+    "title": "Koszyk",
+    "empty": "Twój koszyk jest pusty",
+    "total": "Razem do zapłaty",
+    "checkout": "Złóż zamówienie",
+    "order_success": "Zamówienie zostało złożone pomyślnie!",
+    "add_to_cart": "Dodaj do koszyka",
+  "added": "Dodano ✓"
+  },
+  "footer": {
+    "description": "Najlepsze rozwiązania dla Twojego komfortu od 2024 roku.",
+    "clients": "Dla klientów",
+    "support": "Wsparcie",
+    "contacts": "Kontakt",
+    "privacy": "Polityka prywatności",
+    "returns": "Zwroty i reklamacje",
+    "rights": "Wszelkie prawa zastrzeżone"
+  },
+  "hero": { 
+    "badge_new": "Nowość",
+    "button_view": "Zobacz produkt"
+  },
+  "features": {
+    "video_label": "Recenzja wideo",
+    "title": "Technologie dla życia",
+    "description": "Dowiedz się więcej o tym, jak nasze urządzenia tworzą idealną równowagę wilgotności i świeżości в Twoim domu.",
+    "list": {
+      "item_1": "Inteligentne zużycie energii",
+      "item_2": "Materiały przyjazne dla środowiska"
+    }
+  },
+  "contacts": {
+    "title": "Skontaktuj się z nami",
+    "name_label": "Twoje imię",
+    "comments_label": "Komentarze",
+    "consent": "Wyrażam zgodę na przetwarzanie danych osobowych",
+    "send_button": "Wyślij wiadomość",
+    "socials_title": "Nasze media społecznościowe"
+  },
+  "about": {
+    "title": "O nas",
+    "intro_text": "Jesteśmy zespołem profesjonalistów dążących do tworzenia innowacyjnych rozwiązań dla Twojego komfortu. Dzięki wieloletniemu doświadczeniu wcielamy w życie najśmielsze pomysły w dziedzinie urządzeń przenośnych. Naszą misją jest uczynienie nowoczesnych technologii dostępnymi i wygodnymi dla każdego klienta.",
+    "achievements_title": "Nasze osiągnięcia",
+    "trust_title": "Zaufali nam"
+  },
+  "reviews": {
+    "title": "Opinie klientów",
+    "items": [
+      {
+        "name": "Aleksander",
+        "text": "Najlepszy nawilżacz do biura. Pracuje bardzo cicho.",
+        "rating": 5
+      },
+      {
+        "name": "Maria",
+        "text": "Wentylator bardzo pomaga w podróży. Wysokiej jakości plastik.",
+        "rating": 5
+      }
+    ]
+  },
+  "product_details": {
+  "status_available": "W magazynie",
+  "choose_color": "Wybierz kolor:",
+  "why_title": "Dlaczego warto wybrać ten produkt?",
+  "video_title": "Recenzja wideo i funkcje"
+},
+  "catalog": {
+    "title": "Pełny katalog",
+    "description": "Wybierz swoje idealne urządzenie dla komfortu i świeżości w Twoim domu",
+    "buy": "Kup teraz",
+    "currency": "zł",
+    "new": "Nowość",
+    "products": {
+  "aquamist-desktop": {
+    "name": "AquaMist Desktop",
+    "price": 83,
+    "description": "Kompaktowy nawilżacz z podświetleniem LED i niskim poziomem hałasu.",
+    "benefits": [
+      "Nawilżanie ultradźwiękowe dla zdrowego snu i wydajnej pracy.",
+      "Miękkie podświetlenie LED tworzące przytulną atmosferę wieczorem.",
+      "Niski poziom hałasu, który nie rozprasza podczas pracy lub odpoczynku.",
+      "Stylowy design, który idealnie pasuje do biura lub domu."
+    ]
+  },
+  "nanobreeze-pocket": {
+    "name": "NanoBreeze Pocket",
+    "price": 44,
+    "description": "Wentylator kieszonkowy działający do 8 godzin na jednym ładowaniu.",
+    "benefits": [
+      "Ultralekka obudowa, która mieści się nawet w małej kieszeni.",
+      "Do 8 godzin pracy na baterii dzięki energooszczędnemu akumulatorowi.",
+      "Bezpieczne łopatki, które zatrzymują się automatycznie przy dotknięciu.",
+      "Ładowanie przez standardowy port USB z powerbanku lub laptopa."
+    ]
+  },
+  "frostyhand-v2": {
+    "name": "FrostyHand V2",
+    "price": 58,
+    "description": "Mocny wentylator ręczny z trzema trybami prędkości.",
+    "benefits": [
+      "Trzy tryby prędkości dla indywidualnego dopasowania chłodzenia.",
+      "Ergonomiczny uchwyt zapewniający wygodne trzymanie przez długi czas.",
+      "Mocny przepływ powietrza, zdolny natychmiast odświeżyć w upale.",
+      "Ulepszona stabilność konstrukcji do pracy na płaskich powierzchniach."
+    ]
+  },
+  "cloudhumid-mini": {
+    "name": "CloudHumid Mini",
+    "price": 117,
+    "description": "Nawilżacz ultradźwiękowy z funkcją dyfuzora zapachowego.",
+    "benefits": [
+      "Wbudowany dyfuzor zapachowy tworzący przyjemny aromat w pomieszczeniu.",
+      "Automatyczne wyłączanie przy niewystarczającej ilości wody.",
+      "Drobna mgiełka, która nie pozostawia kropel na meblach.",
+      "Wymienne filtry zapewniające długą i czystą eksploatację."
+    ]
+  },
+  "stormpocket-turbo": {
+    "name": "StormPocket Turbo",
+    "price": 73,
+    "description": "Wentylator Turbo dla ekstremalnego chłodu w upalne dni.",
+    "benefits": [
+      "Silnik Turbo dla maksymalnie mocnego nawiewu.",
+      "Metalowa powłoka ochronna chroniąca przed przypadkowymi uszkodzeniami.",
+      "Tryb szybkiego ładowania dla aktywnych podróżników.",
+      "Specjalny uchwyt do zawieszenia na plecaku lub torbie."
+    ]
+  },
+  "aquaglow-portable": {
+    "name": "AquaGlow Portable",
+    "price": 92,
+    "description": "Przenośny nawilżacz z wbudowanym akumulatorem 2000mAh.",
+    "benefits": [
+      "Pełna mobilność bez kabli dzięki akumulatorowi 2000mAh.",
+      "Wskaźnik poziomu naładowania, aby zawsze wiedzieć, kiedy podładować.",
+      "Podwójne rozpylanie dla szybkiego osiągnięcia komfortowej wilgotności.",
+      "Odporność na przewrócenie dzięki gumowanej podstawie."
+    ]
+  }
+}
+  }
+}
