@@ -140,9 +140,9 @@ export default function ProductPage() {
     product?.variants?.[0] || { color: "", img: product?.image }
   );
 
- const benefits = product 
-    ? (t(`catalog.products.${product.slug}.benefits`, { returnObjects: true }) as string[])
-    : [];
+const benefits = product?.slug 
+  ? (t(`catalog.products.${product.slug}.benefits`, { returnObjects: true }) as string[])
+  : [];
 
   if (!product) {
     return <div className="text-center py-20 text-xl font-bold">Товар не знайдено</div>;
