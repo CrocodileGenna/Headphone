@@ -15,7 +15,7 @@ export async function clientLoader({ params }: Route.LoaderArgs) {
 
 export default function HomePage() {
   const mainProduct = products[0];
-  const mainProduct1 = products[3];
+  const mainProduct1 = products[5];
 
   return (
     <main>

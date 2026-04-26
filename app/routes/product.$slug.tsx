@@ -134,7 +134,7 @@ export default function ProductPage() {
 
  
 
-  const product = products.find(p => p.slug === slug);
+ const product = products.find(p => p.slug === slug);
 
   const [selectedVariant, setSelectedVariant] = useState(
     product?.variants?.[0] || { color: "", img: product?.image }

@@ -11,7 +11,7 @@ export function FeaturedProduct({ product, title = "Топ продаж" }: Feat
 
   return (
     <S.FeaturedSection>
-      <S.SectionTitle>{title}</S.SectionTitle>
+      {/* <S.SectionTitle>{title}</S.SectionTitle> */}
       <S.CardWrapper>
         <ProductCard product={product} />
       </S.CardWrapper>
