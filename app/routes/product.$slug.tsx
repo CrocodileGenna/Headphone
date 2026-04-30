@@ -75,7 +75,7 @@ const benefits = useMemo(() => {
             <S.InfoBox>
               <S.StatusTag available={true}>{t('product_details.status_available')}</S.StatusTag>
               <S.Title>{product.name}</S.Title>
-              <S.Price>{t(`catalog.products.${product.slug}.price`)} {t('catalog.currency') }</S.Price>
+              <S.Price>{translatedProduct?.price || ""} {t('catalog.currency')}</S.Price>
               
               <div>
                 <p style={{marginBottom: '10px', fontWeight: 600}}>{t('product_details.choose_color')}:</p>

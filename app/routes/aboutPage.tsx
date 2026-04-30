@@ -1,39 +1,19 @@
-// import { ProductOverview } from "../components/ProductOverview";
-// import { Reviews } from "../components/Reviews";
 
-// export default function ReviewsPage() {
-//   return (
-//     <main className="py-16">
-//       <div className="max-w-6xl mx-auto px-6 mb-20 text-center">
-//         <h1 className="text-4xl font-extrabold text-slate-900 mb-6">Детальні огляди та відгуки</h1>
-//         <p className="text-slate-600 max-w-2xl mx-auto">
-//           Ми тестуємо кожен гаджет, щоб ви були впевнені у своєму виборі. Дивіться відео та читайте думки реальних користувачів.
-//         </p>
-//       </div>
-
-//       <ProductOverview />
-      
-//       <div className="bg-slate-50">
-//         <Reviews />
-//       </div>
-//     </main>
-//   );
-// }
 import * as S from "../styles/aboutPage.style";
 import { Reviews } from "../components/Reviews"; // Используем ваш готовый компонент
 import { useTranslation } from 'react-i18next';
 // Данные (в будущем можно вынести в JSON)
 const awards = [
-  "/photos/award1.jpg",
-  "/photos/award2.jpg",
-  "/photos/award3.jpg"
+  "/photos/award1.png",
+  "/photos/award2.png"
+  // "/photos/award3.jpg"
 ];
 
 const partners = [
-  { name: "Partner 1", logo: "/logos/partner1.svg" },
-  { name: "Partner 2", logo: "/logos/partner2.svg" },
-  { name: "Partner 3", logo: "/logos/partner3.svg" },
-  { name: "Partner 4", logo: "/logos/partner4.svg" },
+  { name: "Partner 1", logo: "/photos/award1.png" },
+  { name: "Partner 2", logo: "/photos/award2.png" },
+  // { name: "Partner 3", logo: "/logos/partner3.svg" },
+  // { name: "Partner 4", logo: "/logos/partner4.svg" },
 ];
 
 export default function AboutPage() {
