@@ -3,14 +3,26 @@ import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend'; 
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+const isBrowser = typeof window !== 'undefined';
+
+const i18nInstance = i18n.use(initReactI18next);
+
+if (isBrowser) {
+  i18nInstance.use(Backend).use(LanguageDetector);
+}
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'ua', 
+    fallbackLng: 'uk', 
     
-    supportedLngs: ['ua', 'us', 'pl', 'de', 'cs', 'hi'], 
+    supportedLngs: ['uk', 'us', 'pl', 'de', 'cs', 'hi'], 
+    
+    resources: isBrowser ? undefined : {
+    uk: { translation: {} }
+    },
     
     detection: {
       order: ['localStorage', 'cookie', 'htmlTag', 'path', 'subdomain'],
@@ -27,8 +39,8 @@ i18n
     
     load: 'languageOnly', 
 
-    debug: process.env.NODE_ENV === 'development',
-
+    // debug: process.env.NODE_ENV === 'development',
+    debug: false,
     react: {
       useSuspense: true, 
     }

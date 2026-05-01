@@ -15,13 +15,13 @@ export default function ContactsPage() {
     }
   };
 
-  const socials = [
-    { name: "Facebook", url: "#", icon: "FB" },
-    { name: "YouTube", url: "#", icon: "YT" },
-    { name: "Threads", url: "#", icon: "TH" },
-    { name: "Instagram", url: "#", icon: "IG" },
-    { name: "TikTok", url: "#", icon: "TT" },
-  ];
+  // const socials = [
+  //   { name: "Facebook", url: "#", icon: "FB" },
+  //   { name: "YouTube", url: "#", icon: "YT" },
+  //   { name: "Threads", url: "#", icon: "TH" },
+  //   { name: "Instagram", url: "#", icon: "IG" },
+  //   { name: "TikTok", url: "#", icon: "TT" },
+  // ];
 
   return (
     <S.ContactsWrapper>
@@ -92,13 +92,13 @@ export default function ContactsPage() {
 
           {/* 2. БЛОК СОЦСЕТЕЙ */}
           <S.SocialSection>
-            <h3 style={{marginBottom: '10px'}}>{t('contacts.socials_title')}</h3>
+            {/* <h3 style={{marginBottom: '10px'}}>{t('contacts.socials_title')}</h3>
             {socials.map((soc) => (
               <S.SocialLink key={soc.name} href={soc.url} target="_blank">
                 <span>{soc.icon}</span>
                 {soc.name}
               </S.SocialLink>
-            ))}
+            ))} */}
 
             {/* 3. ДОПОЛНИТЕЛЬНЫЙ БЛОК (На усмотрение) */}
             <S.InfoBox>
