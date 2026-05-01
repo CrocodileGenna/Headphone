@@ -1,15 +1,15 @@
-import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-styled.browser.esm-CsB5FJZD.js";const n=i.section`
+import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as r,u as s}from"./useTranslation-BA5JSnOe.js";const m=r.section`
   padding: 3rem 0;
   background-color: ${e=>e.theme.colors.white};
 
   @media (min-width: 768px) {
     padding: 4rem 0;
   }
-`,m=i.div`
+`,a=r.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
-`,s=i.h2`
+`,d=r.h2`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
     justify-content: flex-start;
     font-size: 1.5rem;
   }
-`,a=i.span`
+`,l=r.span`
   display: none;
 
   @media (min-width: 768px) {
@@ -34,7 +34,7 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
     border-radius: ${e=>e.theme.borderRadius.full};
     margin-right: 0.75rem;
   }
-`,d=i.div`
+`,c=r.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -43,7 +43,7 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-`,l=i.div`
+`,p=r.div`
   background-color: ${e=>e.theme.colors.backgroundSoft};
   padding: 1.5rem;
   border-radius: ${e=>e.theme.borderRadius.medium};
@@ -61,7 +61,7 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
   @media (min-width: 768px) {
     padding: 2rem;
   }
-`,c=i.p`
+`,h=r.p`
   font-family: ${e=>e.theme.fonts.main};
   color: ${e=>e.theme.colors.textBody};
   font-size: 0.875rem;
@@ -71,7 +71,7 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
   @media (min-width: 768px) {
     font-size: 1rem;
   }
-`,p=i.p`
+`,f=r.p`
   font-family: ${e=>e.theme.fonts.main};
   color: ${e=>e.theme.colors.textMain};
   font-weight: 700;
@@ -87,10 +87,10 @@ import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as i}from"./emotion-st
   @media (min-width: 768px) {
     font-size: 0.875rem;
   }
-`,h=i.div`
+`,x=r.div`
   /* Для звезд обычно используем золотой, но можно добавить его в theme.colors.warning */
   color: #fbbf24; 
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
   font-style: normal;
-`;function g(){const e=[{name:"Олександр",text:"Найкращий зволожувач для офісу. Працює тихо.",rating:5},{name:"Марія",text:"Вентилятор дуже рятує у дорозі. Якісний пластик.",rating:5}];return t.jsx(n,{children:t.jsxs(m,{children:[t.jsxs(s,{children:[t.jsx(a,{}),"Відгуки клієнтів"]}),t.jsx(d,{children:e.map((r,o)=>t.jsxs(l,{children:[t.jsx(h,{children:"★".repeat(r.rating)}),t.jsxs(c,{children:['"',r.text,'"']}),t.jsxs(p,{children:["— ",r.name]})]},o))})]})})}export{g as R};
+`;function y(){const{t:e}=s(),o=e("reviews.items",{returnObjects:!0});return t.jsx(m,{children:t.jsxs(a,{children:[t.jsxs(d,{children:[t.jsx(l,{}),e("reviews.title")]}),t.jsx(c,{children:Array.isArray(o)&&o.map((i,n)=>t.jsxs(p,{children:[t.jsx(f,{children:i.name}),t.jsxs(h,{children:['"',i.text,'"']}),t.jsx(x,{children:"★".repeat(i.rating)})]},n))})]})})}export{y as R};

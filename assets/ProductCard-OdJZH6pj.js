@@ -1,4 +1,4 @@
-import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./CartContext-DXefdILW.js";import{s as t}from"./emotion-styled.browser.esm-CsB5FJZD.js";import{k as b,c as g}from"./products-CEWUdiyj.js";const u=b`
+import{L as g,a as l,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u}from"./CartContext-DXefdILW.js";import{s as t,u as x}from"./useTranslation-BA5JSnOe.js";import{k as b,c as w}from"./products-4kUwbWN9.js";const $=b`
   0% {
     background-color: #10b981; /* Зеленый цвет (например, Emerald 500) */
     transform: scale(1);
@@ -12,7 +12,7 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
        которое задано в основном стиле кнопки ниже */
     transform: scale(1);
   }
-`,w=t(f)`
+`,y=t(g)`
   background-color: ${e=>e.theme.colors.white};
   border: 1px solid ${e=>e.theme.colors.border};
   padding: 1rem;
@@ -38,7 +38,7 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
   @media (min-width: 768px) {
     padding: 1.25rem;
   }
-`,$=t.div`
+`,k=t.div`
   background-color: ${e=>e.theme.colors.backgroundSoft};
   border-radius: ${e=>e.theme.borderRadius.medium};
   margin-bottom: 1rem;
@@ -48,13 +48,13 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
-`,y=t.img`
+`,v=t.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
   mix-blend-mode: multiply;
   transition: transform 0.5s;
-`,k=t.h3`
+`,j=t.h3`
   font-family: ${e=>e.theme.fonts.accent};
   font-size: 1rem;
   font-weight: 700;
@@ -68,7 +68,7 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
   @media (min-width: 768px) {
     font-size: 1.125rem;
   }
-`,v=t.p`
+`,C=t.p`
   font-family: ${e=>e.theme.fonts.main};
   color: ${e=>e.theme.colors.textBody};
   font-size: 0.75rem;
@@ -78,11 +78,11 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-`,j=t.div`
+`,A=t.div`
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
-`,C=t.button`
+`,P=t.button`
   width: 18px;
   height: 18px;
   border-radius: ${e=>e.theme.borderRadius.full};
@@ -107,13 +107,13 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
     transform: scale(1.2);
     border-color: ${e=>e.theme.colors.textMain};
   }
-`,A=t.div`
+`,z=t.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
   padding-top: 0.5rem;
-`,P=t.span`
+`,T=t.span`
   font-size: 1.125rem;
   font-weight: 900;
   color: ${e=>e.theme.colors.textMain};
@@ -121,7 +121,7 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
   @media (min-width: 768px) {
     font-size: 1.25rem;
   }
-`,z=t.button`
+`,B=t.button`
   background-color: ${e=>e.theme.colors.textMain}; /* По умолчанию темная */
   color: ${e=>e.theme.colors.white};
   padding: 0.625rem;
@@ -147,11 +147,11 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
     padding-right: 1rem;
   }
 
-  ${e=>e.isAnimated&&g`
+  ${e=>e.isAnimated&&w`
     /* Применяем анимацию successPulse */
     /* duration: 1s (1 секунда) */
     /* timing-function: ease-out (плавно замедляется в конце) */
-    animation: ${u} 1s ease-out forwards;
+    animation: ${$} 1s ease-out forwards;
     
     /* Отключаем ховер-эффекты и скейл во время анимации */
     pointer-events: none; 
@@ -159,7 +159,7 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
       background-color: #059669; 
     }
   `}
-`,B=t.span`
+`,R=t.span`
   display: none;
   @media (min-width: 640px) {
     display: inline;
@@ -168,4 +168,4 @@ import{L as f,a,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as x}from"./C
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
-`;function S({product:e}){const{addToCart:l}=x(),[i,c]=a.useState(e.variants?.[0]||{img:e.image}),[d,s]=a.useState(!1),m=r=>{r.preventDefault(),r.stopPropagation(),l({...e,selectedColor:i.color,image:i.img}),s(!0),setTimeout(()=>{s(!1)},1e3)},h=(r,n)=>{r.preventDefault(),r.stopPropagation(),c(n)};return o.jsxs(w,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx($,{children:o.jsx(y,{src:i.img,alt:e.name})}),o.jsx(k,{children:e.name}),o.jsx(v,{children:e.description}),e.variants&&o.jsx(j,{children:e.variants.map((r,n)=>o.jsx(C,{bgColor:r.color,isActive:i.color===r.color,onClick:p=>h(p,r),title:r.colorName||""},n))}),o.jsxs(A,{children:[o.jsxs(P,{children:[e.price," ₴"]}),o.jsxs(z,{onClick:m,isAnimated:d,children:[o.jsx(B,{children:"Купити"}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]})]})}export{S as P};
+`;function I({product:e}){const{addToCart:c}=u(),{t:i}=x(),[s,d]=l.useState(e.variants?.[0]||{img:e.image}),[m,a]=l.useState(!1),h=r=>{r.preventDefault(),r.stopPropagation(),c({...e,selectedColor:s.color,image:s.img}),a(!0),setTimeout(()=>{a(!1)},1e3)},p=(r,n)=>{r.preventDefault(),r.stopPropagation(),d(n)};return o.jsxs(y,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx(k,{children:o.jsx(v,{src:s.img,alt:e.name})}),o.jsx(j,{children:e.name}),o.jsx(C,{children:i(`catalog.products.${e.slug}.description`)}),e.variants&&o.jsx(A,{children:e.variants.map((r,n)=>o.jsx(P,{bgColor:r.color,isActive:s.color===r.color,onClick:f=>p(f,r),title:r.colorName||""},n))}),o.jsxs(z,{children:[o.jsxs(T,{children:[i(`catalog.products.${e.slug}.price`),i("catalog.currency")]}),o.jsxs(B,{onClick:h,isAnimated:m,children:[o.jsx(R,{children:i("catalog.buy")}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]})]})}export{I as P};

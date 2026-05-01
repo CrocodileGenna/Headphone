@@ -1,4 +1,4 @@
-import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./products-CEWUdiyj.js";import{P as p}from"./ProductCard-BGAOVhRf.js";import{s as e}from"./emotion-styled.browser.esm-CsB5FJZD.js";import"./CartContext-DXefdILW.js";const m=e.main`
+import{w as n,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p}from"./products-4kUwbWN9.js";import{P as r}from"./ProductCard-OdJZH6pj.js";import{s as e,u as m}from"./useTranslation-BA5JSnOe.js";import"./CartContext-DXefdILW.js";const s=e.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 24px 64px; // Мобильные отступы
@@ -6,14 +6,14 @@ import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./pro
   @media (min-width: 768px) {
     padding: 80px 24px; // Десктопные отступы
   }
-`,r=e.div`
+`,d=e.div`
   text-align: center;
   margin-bottom: 40px;
   
   @media (min-width: 768px) {
     margin-bottom: 64px;
   }
-`,s=e.h1`
+`,x=e.h1`
   font-family: ${t=>t.theme.fonts.accent};
   font-size: 28px;
   font-weight: 800;
@@ -25,7 +25,7 @@ import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./pro
   @media (min-width: 768px) {
     font-size: 40px;
   }
-`,d=e.p`
+`,c=e.p`
   font-family: ${t=>t.theme.fonts.main};
   color: ${t=>t.theme.colors.secondary};
   max-width: 450px;
@@ -36,7 +36,7 @@ import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./pro
   @media (min-width: 768px) {
     font-size: 16px;
   }
-`,x=e.div`
+`,l=e.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr); // 1 колонка на мобилках
   gap: 16px;
@@ -50,4 +50,4 @@ import{w as a,p as i}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{p as n}from"./pro
     grid-template-columns: repeat(4, 1fr); // 4 колонки на десктопах
     gap: 32px;
   }
-`,u=a(function(){return i.jsxs(m,{children:[i.jsxs(r,{children:[i.jsx(s,{children:"Повний каталог"}),i.jsx(d,{children:"Оберіть свій ідеальний пристрій для комфорту та свіжості у вашому домі"})]}),i.jsx(x,{children:n.map(o=>i.jsx(p,{product:o},o.id))})]})});export{u as default};
+`,j=n(function(){const{t:o}=m();return i.jsxs(s,{children:[i.jsxs(d,{children:[i.jsx(x,{children:o("catalog.title")}),i.jsx(c,{children:o("catalog.description")})]}),i.jsx(l,{children:p.map(a=>i.jsx(r,{product:a},a.id))})]})});export{j as default};
