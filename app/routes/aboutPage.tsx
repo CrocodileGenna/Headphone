@@ -4,16 +4,15 @@ import { Reviews } from "../components/Reviews"; // Используем ваш 
 import { useTranslation } from 'react-i18next';
 // Данные (в будущем можно вынести в JSON)
 const awards = [
-  "/photos/award1.png",
-  "/photos/award2.png"
+  "photos/awards/award1.png",
+  "photos/awards/award2.png"
   // "/photos/award3.jpg"
 ];
 
 const partners = [
-  { name: "Partner 1", logo: "/photos/award1.png" },
-  { name: "Partner 2", logo: "/photos/award2.png" },
-  // { name: "Partner 3", logo: "/logos/partner3.svg" },
-  // { name: "Partner 4", logo: "/logos/partner4.svg" },
+  { name: "Partner 1", logo: "photos/partners/aliexpress.png.png" },
+  { name: "Partner 2", logo: "photos/partners/mazon.png.png" },
+  { name: "Partner 3", logo: "photos/partners/temu.png.png" }
 ];
 
 export default function AboutPage() {
@@ -55,8 +54,8 @@ export default function AboutPage() {
       </S.Section>
       <S.FullWidthImageWrapper>
         <S.AdaptiveImage 
-          src="/photos/about-bg.jpg" 
-          alt="Про нас додаткове фото" 
+          src="photos/about-bg.jpg" 
+          alt="About us additional photo" 
         />
       </S.FullWidthImageWrapper>
 
