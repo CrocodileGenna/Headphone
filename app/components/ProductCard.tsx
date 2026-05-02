@@ -40,7 +40,8 @@ const [isAnimated, setIsAnimated] = useState(false);
       
       <S.Title>{product.name}</S.Title>
       <S.Description>
-        {t(`catalog.products.${product.slug}.description`)}
+        {/* {t(`catalog.products.${product.slug}.description`)} */}
+        {t(`${product.slug}.description`)} 
       </S.Description>
 
       {product.variants && (
@@ -59,7 +60,8 @@ const [isAnimated, setIsAnimated] = useState(false);
       
       <S.Footer>
         <S.Price>
-          {t(`catalog.products.${product.slug}.price`)}{t('catalog.currency') }
+          {/* {t(`catalog.products.${product.slug}.price`)}{t('catalog.currency') } */}
+          {t(`${product.slug}.price`)}{t('catalog.currency') }
         </S.Price>
         <S.BuyButton onClick={handleAddToCart} isAnimated={isAnimated}>
           <S.ButtonText>

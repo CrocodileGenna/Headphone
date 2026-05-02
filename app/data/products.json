@@ -3,47 +3,47 @@
     "id": 1,
     "slug": "aquamist-desktop",
     "name": "AquaMist Desktop",
-    "image-all-colors": "/photos/desktop/all-colors.png",
-    "image-description": "/photos/desktop/description.png",
-    "image-additional-info": "/photos/desktop/additional-info.png",
-    "image-infographics": "/photos/desktop/infographics.png",
-    "image": "/photos/desktop/white.png",
+    "image-all-colors": "./photos/desktop/all-colors.png",
+    "image-description": "./photos/desktop/description.png",
+    "image-additional-info": "./photos/desktop/additional-info.png",
+    "image-infographics": "./photos/desktop/infographics.png",
+    "image": "./photos/desktop/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/desktop/white.png" },
-      { "color": "#000", "img": "/photos/desktop/black.png" },
-      { "color": "#487e7d", "img": "/photos/desktop/green.png" }
+      { "color": "#FFFFFF", "img": "./photos/desktop/white.png" },
+      { "color": "#000", "img": "./photos/desktop/black.png" },
+      { "color": "#487e7d", "img": "./photos/desktop/green.png" }
     ]
   },
   {
     "id": 2,
     "slug": "nanobreeze-pocket",
     "name": "NanoBreeze Pocket",
-    "image-all-colors": "/photos/manual/all-colors.png",
-    "image-description": "/photos/manual/description.png",
-    "image-additional-info": "/photos/manual/additional-info.png",
-    "image-hero": "/photos/manual/hero-photo.png",
-    "image": "/photos/manual/white.png",
+    "image-all-colors": "./photos/manual/all-colors.png",
+    "image-description": "./photos/manual/description.png",
+    "image-additional-info": "./photos/manual/additional-info.png",
+    "image-hero": "./photos/manual/hero-photo.png",
+    "image": "./photos/manual/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/manual/white.png" },
-      { "color": "#f5eedf", "img": "/photos/manual/beige.png" },
-      { "color": "#6c6a82", "img": "/photos/manual/eggplant.png" },
-      { "color": "#f0c5bc", "img": "/photos/manual/peach.png" },
-      { "color": "#839f7b", "img": "/photos/manual/green.png" }
+      { "color": "#FFFFFF", "img": "./photos/manual/white.png" },
+      { "color": "#f5eedf", "img": "./photos/manual/beige.png" },
+      { "color": "#6c6a82", "img": "./photos/manual/eggplant.png" },
+      { "color": "#f0c5bc", "img": "./photos/manual/peach.png" },
+      { "color": "#839f7b", "img": "./photos/manual/green.png" }
     ]
   },
   {
     "id": 3,
     "slug": "frostyhand-v2",
     "name": "FrostyHand V2",
-    "image-all-colors": "/photos/hair/all-colors.png",
-    "image-description": "/photos/hair/description.png",
-    "image-additional-info": "/photos/hair/additional-info.png",
-    "image-hero": "/photos/hair/hero-photo.png",
-    "image": "/photos/hair/white.png",
+    "image-all-colors": "./photos/hair/all-colors.png",
+    "image-description": "./photos/hair/description.png",
+    "image-additional-info": "./photos/hair/additional-info.png",
+    "image-hero": "./photos/hair/hero-photo.png",
+    "image": "./photos/hair/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/hair/white.png" },
-      { "color": "#5b6480", "img": "/photos/hair/blue.png" },
-      { "color": "#eadbdb", "img": "/photos/hair/beige.png" }
+      { "color": "#FFFFFF", "img": "./photos/hair/white.png" },
+      { "color": "#5b6480", "img": "./photos/hair/blue.png" },
+      { "color": "#eadbdb", "img": "./photos/hair/beige.png" }
     ]
   },
   {
@@ -51,44 +51,44 @@
     "slug": "cloudhumid-mini",
     "name": "CloudHumid Mini",
 
-    "image-all-colors": "/photos/frog/all-colors.png",
-    "image-description": "/photos/frog/description.png",
-    "image-hero": "/photos/frog/hero-photo.png",
-    "image": "/photos/frog/white.png",
+    "image-all-colors": "./photos/frog/all-colors.png",
+    "image-description": "./photos/frog/description.png",
+    "image-hero": "./photos/frog/hero-photo.png",
+    "image": "./photos/frog/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/frog/white.png" },
-      { "color": "#575eb5", "img": "/photos/frog/blue.png" },
-      { "color": "#eaacba", "img": "/photos/frog/pink.png" },
-      { "color": "#f5c56f", "img": "/photos/frog/yelow.png" }
+      { "color": "#FFFFFF", "img": "./photos/frog/white.png" },
+      { "color": "#575eb5", "img": "./photos/frog/blue.png" },
+      { "color": "#eaacba", "img": "./photos/frog/pink.png" },
+      { "color": "#f5c56f", "img": "./photos/frog/yelow.png" }
     ]
   },
   {
     "id": 5,
     "slug": "stormpocket-turbo",
     "name": "StormPocket Turbo",
-    "image-all-colors": "/photos/pocket/all-colors.png",
-    "image-description": "/photos/pocket/description.png",
-    "image-additional-info": "/photos/pocket/additional-info1.png",
-    "image": "/photos/pocket/white.png",
+    "image-all-colors": "./photos/pocket/all-colors.png",
+    "image-description": "./photos/pocket/description.png",
+    "image-additional-info": "./photos/pocket/additional-info1.png",
+    "image": "./photos/pocket/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/pocket/white.png" },
-      { "color": "#b1c8d7", "img": "/photos/pocket/blue.png" },
-      { "color": "#f6d2cc", "img": "/photos/pocket/pink.png" },
-      { "color": "#454648", "img": "/photos/pocket/black.png" }
+      { "color": "#FFFFFF", "img": "./photos/pocket/white.png" },
+      { "color": "#b1c8d7", "img": "./photos/pocket/blue.png" },
+      { "color": "#f6d2cc", "img": "./photos/pocket/pink.png" },
+      { "color": "#454648", "img": "./photos/pocket/black.png" }
     ]
   },
   {
     "id": 6,
     "slug": "aquaglow-portable",
     "name": "AquaGlow Portable",
-    "image-all-colors": "/photos/keychain/all-colors.png",
-    "image-description": "/photos/keychain/description.png",
-    "image-additional-info": "/photos/keychain/additional-info.png",
-    "image": "/photos/keychain/white.png",
+    "image-all-colors": "./photos/keychain/all-colors.png",
+    "image-description": "./photos/keychain/description.png",
+    "image-additional-info": "./photos/keychain/additional-info.png",
+    "image": "./photos/keychain/white.png",
     "variants": [
-      { "color": "#FFFFFF", "img": "/photos/keychain/white.png" },
-      { "color": "#76897e", "img": "/photos/keychain/green.png" },
-      { "color": "#e5c4b8", "img": "/photos/keychain/peach.png" }
+      { "color": "#FFFFFF", "img": "./photos/keychain/white.png" },
+      { "color": "#76897e", "img": "./photos/keychain/green.png" },
+      { "color": "#e5c4b8", "img": "./photos/keychain/peach.png" }
     ]
   }
 ]
