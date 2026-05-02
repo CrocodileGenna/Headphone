@@ -5,7 +5,10 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 const isBrowser = typeof window !== 'undefined';
 
-const i18nInstance = i18n.use(initReactI18next);
+// const i18nInstance = i18n.use(initReactI18next);
+const i18nInstance = i18n.createInstance();
+
+i18nInstance.use(initReactI18next);
 
 if (isBrowser) {
   i18nInstance.use(Backend).use(LanguageDetector);
@@ -30,7 +33,8 @@ i18n
     },
 
     backend: {
-      loadPath: '/public/locales/{{lng}}/translation.json',
+      // loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: `${import.meta.env.BASE_URL || '/'}locales/{{lng}}/translation.json`,
     },
 
     interpolation: {

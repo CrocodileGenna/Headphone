@@ -108,9 +108,9 @@ export function Hero() {
                   <S.Title>
                     {product.name}
                   </S.Title>
-                  <S.Description>
+                  {/* <S.Description>
                     {product.description}
-                  </S.Description>
+                  </S.Description> */}
                   
                 </S.TextContent>
                 <S.Button to={`/product/${product.slug}`}>

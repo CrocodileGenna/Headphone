@@ -44,7 +44,7 @@ const benefits = useMemo(() => {
   const handleAddToCart = () => {
     addToCart({ 
         ...product, 
-        name: translatedProduct?.name || product.name, // Беремо перекладену назву
+        name: translatedProduct?.name || product.name, 
         selectedColor: selectedVariant.color, 
         image: selectedVariant.img 
     });
