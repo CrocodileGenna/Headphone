@@ -734,7 +734,7 @@ import{a as b,p,L as De,q as oo,w as ra,t as aa,M as la,v as ca,S as ua,x as Aa,
     margin-top: 3rem;
     font-size: 0.75rem;
   }
-`;function Kf(){const{t:e}=je(),t=new Date().getFullYear();return p.jsxs(Qf,{children:[p.jsxs(Ff,{children:[p.jsxs($f,{children:[p.jsxs(Nf,{to:"/",children:["chillax",p.jsx("span",{children:"cooling"})]}),p.jsx(Uf,{children:e("footer.description")})]}),p.jsxs("div",{children:[p.jsx(Ks,{children:e("footer.support")}),p.jsxs(zf,{children:[p.jsx(Ws,{to:"/privacy",children:e("footer.privacy")}),p.jsx(Ws,{to:"/returns",children:e("footer.returns")})]})]}),p.jsxs("div",{children:[p.jsx(Ks,{children:e("footer.contacts")||"Контакти"}),p.jsxs(Hf,{children:[p.jsx("p",{className:"address",children:"м. Дніпро, пр. Науки"}),p.jsx("p",{className:"email",children:"info@pocketfresh.ua"})]})]})]}),p.jsx(Jf,{children:p.jsxs("p",{children:["© ",t," ",e("footer.rights")||"Pocket.Fresh | Всі права захищені"]})})]})}const Wf=E.button`
+`;function Kf(){const{t:e}=je(),t=new Date().getFullYear();return p.jsxs(Qf,{children:[p.jsxs(Ff,{children:[p.jsxs($f,{children:[p.jsxs(Nf,{to:"/",children:["chillax",p.jsx("span",{children:"cooling"})]}),p.jsx(Uf,{children:e("footer.description")})]}),p.jsxs("div",{children:[p.jsx(Ks,{children:e("footer.support")}),p.jsxs(zf,{children:[p.jsx(Ws,{to:"/privacy",children:e("footer.privacy")}),p.jsx(Ws,{to:"/returns",children:e("footer.returns")})]})]}),p.jsxs("div",{children:[p.jsx(Ks,{children:e("footer.contacts")||"Контакти"}),p.jsx(Hf,{children:p.jsx("p",{className:"email",children:"chillaxcooling@gmail.com"})})]})]}),p.jsx(Jf,{children:p.jsxs("p",{children:["© ",t," ",e("footer.rights")||"Pocket.Fresh | Всі права захищені"]})})]})}const Wf=E.button`
   position: fixed;
   bottom: 40px;
   right: 40px;
