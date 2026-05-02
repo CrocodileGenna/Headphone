@@ -37,8 +37,7 @@ export function Footer() {
         <div>
           <S.ColumnTitle>{t('footer.contacts') ||`Контакти`}</S.ColumnTitle>
           <S.ContactInfo>
-            <p className="address">м. Дніпро, пр. Науки</p>
-            <p className="email">info@pocketfresh.ua</p>
+            <p className="email">chillaxcooling@gmail.com</p>
           </S.ContactInfo>
         </div>
       </S.Grid>

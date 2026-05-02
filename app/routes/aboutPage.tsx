@@ -4,21 +4,27 @@ import { Reviews } from "../components/Reviews"; // Используем ваш 
 import { useTranslation } from 'react-i18next';
 // Данные (в будущем можно вынести в JSON)
 const awards = [
-  "photos/awards/award1.png",
-  "photos/awards/award2.png"
-  // "/photos/award3.jpg"
+  // "photos/awards/award1.png",
+  `${import.meta.env.BASE_URL || '/'}photos/awards/award1.jpg`,
+  // "photos/awards/award2.png"
+  `${import.meta.env.BASE_URL || '/'}photos/awards/award2.jpg`,
+  
 ];
 
 const partners = [
-  { name: "Partner 1", logo: "photos/partners/aliexpress.png.png" },
-  { name: "Partner 2", logo: "photos/partners/mazon.png.png" },
-  { name: "Partner 3", logo: "photos/partners/temu.png.png" }
+  // { name: "Partner 1", logo: "photos/partners/aliexpress.png" },
+  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/aliexpress.png`},
+  // { name: "Partner 2", logo: "photos/partners/mazon.png" },
+  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/mazon.png`},
+  // { name: "Partner 3", logo: "photos/partners/temu.png" }
+  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/temu.png`},
 ];
 
 export default function AboutPage() {
   const { t } = useTranslation();
   return (
-    <S.AboutWrapper>
+    
+ <S.AboutWrapper>
       {/* 1. Заголовок и описание */}
       <S.Section>
         <S.Container>
@@ -35,7 +41,7 @@ export default function AboutPage() {
           <S.SectionTitle>{t('about.achievements_title')}</S.SectionTitle>
           <S.AwardsGrid>
             {awards.map((src, i) => (
-              <img key={i} src={src} alt={`Грамота ${i + 1}`} />
+              <img key={i} src={src} alt={`award ${i + 1}`} />
             ))}
           </S.AwardsGrid>
         </S.Container>
