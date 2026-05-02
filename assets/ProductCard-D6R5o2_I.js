@@ -1,4 +1,4 @@
-import{L as g,a as l,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u}from"./CartContext-DXefdILW.js";import{s as t,u as x}from"./useTranslation-BA5JSnOe.js";import{k as b,c as w}from"./products-4kUwbWN9.js";const $=b`
+import{L as x,a as l,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u as g}from"./CartContext-DXefdILW.js";import{s as t,u}from"./useTranslation-BA5JSnOe.js";import{k as b,c as w}from"./products-BgEgl5gd.js";const $=b`
   0% {
     background-color: #10b981; /* Зеленый цвет (например, Emerald 500) */
     transform: scale(1);
@@ -12,7 +12,7 @@ import{L as g,a as l,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u}from"./C
        которое задано в основном стиле кнопки ниже */
     transform: scale(1);
   }
-`,y=t(g)`
+`,y=t(x)`
   background-color: ${e=>e.theme.colors.white};
   border: 1px solid ${e=>e.theme.colors.border};
   padding: 1rem;
@@ -168,4 +168,4 @@ import{L as g,a as l,p as o}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{u}from"./C
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
-`;function I({product:e}){const{addToCart:c}=u(),{t:i}=x(),[s,d]=l.useState(e.variants?.[0]||{img:e.image}),[m,a]=l.useState(!1),h=r=>{r.preventDefault(),r.stopPropagation(),c({...e,selectedColor:s.color,image:s.img}),a(!0),setTimeout(()=>{a(!1)},1e3)},p=(r,n)=>{r.preventDefault(),r.stopPropagation(),d(n)};return o.jsxs(y,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx(k,{children:o.jsx(v,{src:s.img,alt:e.name})}),o.jsx(j,{children:e.name}),o.jsx(C,{children:i(`catalog.products.${e.slug}.description`)}),e.variants&&o.jsx(A,{children:e.variants.map((r,n)=>o.jsx(P,{bgColor:r.color,isActive:s.color===r.color,onClick:f=>p(f,r),title:r.colorName||""},n))}),o.jsxs(z,{children:[o.jsxs(T,{children:[i(`catalog.products.${e.slug}.price`),i("catalog.currency")]}),o.jsxs(B,{onClick:h,isAnimated:m,children:[o.jsx(R,{children:i("catalog.buy")}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]})]})}export{I as P};
+`;function I({product:e}){const{addToCart:c}=g(),{t:i}=u(),[s,d]=l.useState(e.variants?.[0]||{img:e.image}),[m,a]=l.useState(!1),h=r=>{r.preventDefault(),r.stopPropagation(),c({...e,selectedColor:s.color,image:s.img}),a(!0),setTimeout(()=>{a(!1)},1e3)},p=(r,n)=>{r.preventDefault(),r.stopPropagation(),d(n)};return o.jsxs(y,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx(k,{children:o.jsx(v,{src:s.img,alt:e.name})}),o.jsx(j,{children:e.name}),o.jsx(C,{children:i(`${e.slug}.description`)}),e.variants&&o.jsx(A,{children:e.variants.map((r,n)=>o.jsx(P,{bgColor:r.color,isActive:s.color===r.color,onClick:f=>p(f,r),title:r.colorName||""},n))}),o.jsxs(z,{children:[o.jsxs(T,{children:[i(`${e.slug}.price`),i("catalog.currency")]}),o.jsxs(B,{onClick:h,isAnimated:m,children:[o.jsx(R,{children:i("catalog.buy")}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]})]})}export{I as P};
