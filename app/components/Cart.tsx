@@ -55,7 +55,7 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
                     <S.ItemImg src={item.image} alt={item.name} />
                     <S.ItemInfo>
                       <S.ItemName>{item.name}</S.ItemName>
-                      <S.ItemPrice>{item.price} ₴</S.ItemPrice>
+                      <S.ItemPrice>{item.price} {t('catalog.currency')}</S.ItemPrice>
                     </S.ItemInfo>
                     <S.RemoveBtn onClick={() => removeFromCart(index)}>✕</S.RemoveBtn>
                   </S.Item>
@@ -63,7 +63,7 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               )}
             </S.Content>
 
-            <S.Footer>
+            {/* <S.Footer>
               <S.TotalRow>
                 <span>{t('cart.total') || 'Всього к оплаті'}:</span>
                 <strong style={{ fontSize: '1.2rem' }}>{totalPrice} ₴</strong>
@@ -74,7 +74,20 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               >
                 {t('cart.checkout') || 'Оформити замовлення'}
               </S.CheckoutBtn>
-            </S.Footer>
+            </S.Footer> */}
+            <S.Footer>
+  <S.TotalRow>
+    <span>{t('cart.total')}:</span>
+    {/* Замінено ₴ на динамічну валюту з i18n */}
+    <strong style={{ fontSize: '1.2rem' }}>{totalPrice} {t('catalog.currency')}</strong>
+  </S.TotalRow>
+  <S.CheckoutBtn 
+    disabled={cartItems.length === 0}
+    onClick={() => alert(t('cart.order_success'))}
+  >
+    {t('cart.checkout')}
+  </S.CheckoutBtn>
+</S.Footer>
           </S.CartPanel>
         </>
       )}

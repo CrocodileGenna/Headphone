@@ -112,7 +112,7 @@ export function Header() {
               <S.MobileHeader>
   <S.MobileLogoWrapper to="/" onClick={closeMenu}>
     <S.MobileLogoO>
-      <img src="/logo.png" alt="Background Logo" />
+      <img src="./logo.png" alt="Background Logo" />
     </S.MobileLogoO>
 
     <S.TextContent>

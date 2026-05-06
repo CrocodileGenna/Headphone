@@ -13,11 +13,11 @@ const awards = [
 
 const partners = [
   // { name: "Partner 1", logo: "photos/partners/aliexpress.png" },
-  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/aliexpress.png`},
+  { name: "aliexpress", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/aliexpress.png`},
   // { name: "Partner 2", logo: "photos/partners/mazon.png" },
-  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/mazon.png`},
+  { name: "amazon", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/amazon.png`},
   // { name: "Partner 3", logo: "photos/partners/temu.png" }
-  { name: "Partner 1", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/temu.png`},
+  { name: "temu", logo:`${import.meta.env.BASE_URL || '/'}photos/partners/temu.png`},
 ];
 
 export default function AboutPage() {
