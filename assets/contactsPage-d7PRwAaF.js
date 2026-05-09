@@ -1,4 +1,4 @@
-import{w as l,a as d,p as e}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as t,u as c}from"./useTranslation-BA5JSnOe.js";import{C as p,a as x}from"./aboutPage.style-2QYr5id-.js";const m=t.div`
+import{w as l,a as d,p as e}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{s as t,u as c}from"./useTranslation-WiU9NkHO.js";import{C as p,a as x}from"./aboutPage.style-BDsOhHwc.js";const m=t.div`
   padding: 120px 0 80px;
   background: #f8fafc;
   min-height: 100vh;

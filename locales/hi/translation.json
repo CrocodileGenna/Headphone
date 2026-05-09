@@ -13,7 +13,8 @@
     "checkout": "ऑर्डर दें",
     "order_success": "ऑर्डर सफलतापूर्वक दिया गया!",
     "add_to_cart": "कार्ट में जोड़ें",
-  "added": "जोड़ा गया ✓"
+    "added": "जोड़ा गया ✓",
+    "clear_all": "सब साफ करें"
   },
   "footer": {
     "description": "2024 से आपके आराम के लिए सर्वोत्तम समाधान।",
@@ -78,6 +79,7 @@
     "buy": "खरीदें",
     "currency": "₹",
     "new": "नया",
+    "view_details": "विवरण देखें",
    "products": {
   "aquamist-desktop": {
     "name": "AquaMist Desktop",

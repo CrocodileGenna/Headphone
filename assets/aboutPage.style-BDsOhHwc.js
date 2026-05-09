@@ -1,4 +1,4 @@
-import{s as t}from"./useTranslation-BA5JSnOe.js";const i=t.div`
+import{s as t}from"./useTranslation-WiU9NkHO.js";const i=t.div`
   padding-top: 80px; /* Отступ под хедер */
 `,o=t.section`
   padding: 80px 0;

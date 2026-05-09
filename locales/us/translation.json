@@ -13,7 +13,8 @@
     "checkout": "Place Order",
     "order_success": "Order placed successfully!",
     "add_to_cart": "Add to Cart",
-  "added": "Added ✓"
+    "added": "Added ✓",
+    "clear_all": "Clear all"
   },
   "footer": {
     "description": "Premium comfort solutions since 2024.",
@@ -78,6 +79,7 @@
     "buy": "Add to Cart",
     "currency": "$",
     "new": "New",
+    "view_details": "View details",
   "products": {
   "aquamist-desktop": {
     "name": "AquaMist Desktop",

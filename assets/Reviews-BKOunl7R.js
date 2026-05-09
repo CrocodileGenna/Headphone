@@ -1,4 +1,4 @@
-import{p as t}from"./chunk-EPOLDU6W-BmIYdT5Y.js";import{s as r,u as s}from"./useTranslation-BA5JSnOe.js";const m=r.section`
+import{p as t}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{s as r,u as s}from"./useTranslation-WiU9NkHO.js";const m=r.section`
   padding: 3rem 0;
   background-color: ${e=>e.theme.colors.white};
 
