@@ -13,7 +13,8 @@
     "checkout": "Złóż zamówienie",
     "order_success": "Zamówienie zostało złożone pomyślnie!",
     "add_to_cart": "Dodaj do koszyka",
-  "added": "Dodano ✓"
+    "added": "Dodano ✓",
+    "clear_all": "Wyczyść wszystko"
   },
   "footer": {
     "description": "Najlepsze rozwiązania dla Twojego komfortu od 2024 roku.",
@@ -78,6 +79,7 @@
     "buy": "Kup teraz",
     "currency": "zł",
     "new": "Nowość",
+    "view_details": "Zobacz szczegóły",
     "products": {
   "aquamist-desktop": {
     "name": "AquaMist Desktop",

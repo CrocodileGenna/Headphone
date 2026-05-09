@@ -1,161 +1,3 @@
-// import styled from '@emotion/styled';
-// import { motion } from 'framer-motion';
-
-// export const Overlay = styled(motion.div)`
-//   position: fixed;
-//   inset: 0;
-//   background-color: rgba(15, 23, 42, 0.4);
-//   backdrop-filter: blur(4px);
-//   -webkit-backdrop-filter: blur(4px);
-//   z-index: 9995;
-// `;
-
-// export const CartPanel = styled(motion.div)`
-//   position: fixed;
-//   background-color: white;
-//   z-index: 9999;
-//   display: flex;
-//   flex-direction: column;
-//   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-
-//   /* Мобильная версия: как в хедере */
-//   @media (max-width: 767px) {
-//     top: 0;
-//     bottom: 0;
-//     right: 0;
-//     width: 80%; /* Такие же пропорции, как у меню */
-//     height: 100%;
-//   }
-
-//   /* Десктопная версия: окно по центру */
-//   @media (min-width: 768px) {
-//     top: 50%;
-//     left: 50%;
-//     /* Центрирование через transform будет обрабатывать framer-motion, 
-//        здесь задаем только размеры */
-//     width: 500px;
-//     max-height: 80vh;
-//     border-radius: 24px;
-//     overflow: hidden;
-//   }
-// `;
-
-// export const Header = styled.div`
-//   padding: 1.5rem;
-//   border-bottom: 1px solid #f1f5f9;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: white;
-// `;
-
-// export const Title = styled.h2`
-//   font-size: 1.25rem;
-//   font-weight: 700;
-//   color: #0f172a;
-//   display: flex;
-//   align-items: center;
-//   gap: 0.5rem;
-// `;
-
-// export const CloseBtn = styled.button`
-//   width: 2.5rem;
-//   height: 2.5rem;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 9999px;
-//   border: none;
-//   background: #f8fafc;
-//   color: #94a3b8;
-//   cursor: pointer;
-//   transition: all 0.2s;
-//   font-size: 1.5rem;
-
-//   &:hover {
-//     background-color: #f1f5f9;
-//     color: #0f172a;
-//   }
-// `;
-
-// export const Content = styled.div`
-//   flex-grow: 1;
-//   overflow-y: auto;
-//   padding: 1.25rem;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1rem;
-
-//   &::-webkit-scrollbar { width: 4px; }
-//   &::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
-// `;
-
-// export const Item = styled.div`
-//   display: flex;
-//   gap: 1rem;
-//   padding: 0.75rem;
-//   background: #fff;
-//   border-radius: 1rem;
-//   border: 1px solid #f1f5f9;
-// `;
-
-// export const ItemImg = styled.img`
-//   width: 4rem;
-//   height: 4rem;
-//   object-fit: contain;
-//   background: #f8fafc;
-//   border-radius: 0.5rem;
-// `;
-
-// export const ItemInfo = styled.div`
-//   flex-grow: 1;
-// `;
-
-// export const ItemName = styled.h4`
-//   font-weight: 700;
-//   font-size: 0.9rem;
-//   margin: 0;
-// `;
-
-// export const ItemPrice = styled.p`
-//   color: #2563eb;
-//   font-weight: 800;
-//   margin: 4px 0 0;
-// `;
-
-// export const RemoveBtn = styled.button`
-//   background: none;
-//   border: none;
-//   color: #cbd5e1;
-//   cursor: pointer;
-//   &:hover { color: #ef4444; }
-// `;
-
-// export const Footer = styled.div`
-//   padding: 1.5rem 1.5rem 3.5rem 1.5rem;
-//   border-top: 1px solid #f1f5f9;
-//   background: #f8fafc;
-// `;
-
-// export const TotalRow = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   margin-bottom: 1rem;
-// `;
-
-// export const CheckoutBtn = styled.button`
-//   width: 100%;
-//   background: #2563eb;
-//   color: white;
-//   border: none;
-//   padding: 1.25rem;
-//   border-radius: 1rem;
-//   font-weight: 700;
-//   cursor: pointer;
-//   transition: 0.3s;
-//   &:disabled { opacity: 0.5; filter: grayscale(1); }
-//   &:hover:not(:disabled) { background: #1d4ed8; transform: translateY(-2px); }
-// `;
 
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
@@ -336,5 +178,28 @@ export const CheckoutBtn = styled.button`
     background: ${props => props.theme.colors.primaryHover}; 
     transform: translateY(-2px);
     box-shadow: ${props => props.theme.shadows.button};
+  }
+`;
+export const ClearCartBtn = styled.button`
+  display: block;
+  margin: 15px auto 0; /* Центрируем под кнопкой оформления */
+  background: none;
+  border: none;
+  color: #94a3b8; /* Спокойный серый цвет */
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.8;
+
+  &:hover {
+    color: #ef4444; /* Мягкий красный при наведении */
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 `;

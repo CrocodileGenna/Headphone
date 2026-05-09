@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 import { Cart } from "./Cart";
 import * as Icons from "../icons";
 import * as S from "../styles/header.style"; 
+import { useLocation, Link } from 'react-router';
 
 import { LanguageSelector } from "./LanguageSelector";
 
@@ -32,6 +33,9 @@ export function Header() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { cartItems } = useCart();
   const { t } = useTranslation();
+const { pathname } = useLocation();
+  const isCheckoutPage = pathname === '/checkout';
+  
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -64,8 +68,7 @@ export function Header() {
     <S.CommunityTag>2.0</S.CommunityTag>
   </S.LogoTextGroup>
 </S.Logo>
-
-          <S.Nav>
+{!isCheckoutPage && (<> <S.Nav>
              {/* <S.NavLink to="/">Головна</S.NavLink>
             <S.NavLink to="/catalog">Каталог</S.NavLink>
             <S.NavLink to="/about">Про нас</S.NavLink>
@@ -87,6 +90,8 @@ export function Header() {
               <S.BurgerLine isOpen={isMenuOpen} />
             </S.BurgerBtn>
           </S.Actions>
+          </>)}
+         
         </S.Container>
       </S.StyledHeader>
 
@@ -124,7 +129,7 @@ export function Header() {
     </S.TextContent>
   </S.MobileLogoWrapper>
 </S.MobileHeader>
-
+{!isCheckoutPage && (<> 
               <S.MobileNav>
                 {/* <S.MobileLink to="/" onClick={closeMenu}>Головна</S.MobileLink>
                 <S.MobileLink to="/catalog" onClick={closeMenu}>Каталог</S.MobileLink>
@@ -149,6 +154,7 @@ export function Header() {
     <img src={Icons.youtube} alt="youtube" />
   </S.SocialIcon>
 </S.MobileSocials>
+|</>)}
             </S.MobilePanel>
           </S.MobileMenuWrapper>
         )}

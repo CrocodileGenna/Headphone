@@ -1,7 +1,7 @@
 
 import { Hero } from "../components/Hero";
 import products  from "../data/products.json";
-import { InfoSection } from "../components/InfoSection";
+// import { InfoSection } from "../components/InfoSection";
 import { Reviews } from "../components/Reviews"; 
 import { ProductOverview } from "../components/ProductOverview";
 import { FeaturedProduct } from "../components/FeaturedProduct";

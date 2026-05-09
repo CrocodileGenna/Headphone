@@ -11,19 +11,11 @@ export default function ProductPage() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { t } = useTranslation();
 
- 
 
-//  const product = products.find(p => p.slug === slug);
 const product = useMemo(() => products.find(p => p.slug === slug), [slug]);
 
-  // const [selectedVariant, setSelectedVariant] = useState(
-  //   product?.variants?.[0] || { color: "", img: product?.image }
-  // );
 const translatedProduct = t(`catalog.products.${slug}`, { returnObjects: true }) as any;
 
-// const benefits = product?.slug 
-//   ? (t(`catalog.products.${product.slug}.benefits`, { returnObjects: true }) as string[])
-//   : [];
 const benefits = useMemo(() => {
     if (translatedProduct && typeof translatedProduct === 'object' && Array.isArray(translatedProduct.benefits)) {
       return translatedProduct.benefits;
@@ -41,22 +33,41 @@ const benefits = useMemo(() => {
     return <div className="text-center py-20 text-xl font-bold">Товар не знайдено</div>;
   }
 
-  const handleAddToCart = () => {
-    addToCart({ 
-        ...product, 
-        name: translatedProduct?.name || product.name, 
-        selectedColor: selectedVariant.color, 
-        image: selectedVariant.img 
-    });
-    setIsAnimated(true);
-    setTimeout(() => setIsAnimated(false), 1000);
-  };
+ const translatedPrice = translatedProduct?.price;
 
+const currentPrice = translatedPrice ?? (product as any).price ?? 0;
+
+const handleAddToCart = () => {
+  addToCart({ 
+    ...product, 
+    name: translatedProduct?.name || product.name, 
+    selectedColor: selectedVariant.color, 
+    image: getCorrectPath(selectedVariant.img),
+    price: Number(currentPrice) 
+  });
+  setIsAnimated(true);
+  setTimeout(() => {
+    setIsAnimated(false);
+  }, 1000);
+};
+ // 1. Добавим вспомогательную функцию для проверки путей
+const getCorrectPath = (path?: string) => {
+  if (!path) return "";
+  // Если путь уже начинается с http или /, оставляем как есть, 
+  // иначе добавляем / в начало для корректного поиска от корня сайта
+  return path.startsWith('/') ? path : `/${path}`;
+};
+
+// 2. Обработаем все изображения перед использованием
+const heroImage = getCorrectPath(product["image-all-colors"] || product.image);
+const mainImage = getCorrectPath(selectedVariant.img);
+const descImage = getCorrectPath(product["image-description"]);
   return (
     <S.PageWrapper>
       {/* 1. БЛОК ХИРО */}
-      <S.HeroBanner src={product["image-all-colors"] || product.image}>
-        
+      {/* <S.HeroBanner src={product["image-all-colors"] || product.image}> */}
+
+    <S.HeroBanner src={heroImage}>        
         <S.Container>
           <S.HeroContent>
           </S.HeroContent>
@@ -68,7 +79,8 @@ const benefits = useMemo(() => {
         <S.Container>
           <S.MainGrid>
             <S.ImageBox>
-              <img src={selectedVariant.img} alt={product.name} />
+              {/* <img src={selectedVariant.img} alt={product.name} /> */}
+              <img src={mainImage} alt={product.name} />
         
             </S.ImageBox>
             
@@ -103,11 +115,12 @@ const benefits = useMemo(() => {
       <S.InfoGraphicSection>
         <S.Container>
           <S.InfoGraphicGrid>
-            <img 
+            {/* <img 
               src={product["image-description"]} 
               alt="Features" 
               style={{width: '100%', borderRadius: '20px'}} 
-            />
+            /> */}
+            <img src={descImage} alt="Features" style={{width: '100%', borderRadius: '20px'}} />
             <div>
               <h2 style={{fontSize: '2rem', marginBottom: '30px'}}>{t('product_details.why_title')}</h2>
               <S.List>

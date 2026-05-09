@@ -38,7 +38,4 @@ export const CardWrapper = styled.div`
   justify-content: center;
   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: translateY(-5px);
-  }
 `;

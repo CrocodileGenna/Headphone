@@ -10,19 +10,25 @@ export function ProductCard({ product }: { product: any }) {
   const [selectedVariant, setSelectedVariant] = useState(product.variants?.[0] || { img: product.image });
 const [isAnimated, setIsAnimated] = useState(false);
 
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault(); // Зупиняє перехід за посиланням
-    e.stopPropagation(); // Зупиняє спливання події
-    addToCart({ ...product, selectedColor: selectedVariant.color, image: selectedVariant.img });
-    
-    // Включаем анимацию
-    setIsAnimated(true);
+ const handleAddToCart = (e: React.MouseEvent) => {
+  e.preventDefault();
+  e.stopPropagation();
 
-    // Ровно через 1 секунду (1000 мс) выключаем её
-    setTimeout(() => {
-      setIsAnimated(false);
-    }, 1000);
-  };
+  // Получаем цену из i18n, как вы это делаете в рендере
+  const price = t(`catalog.products.${product.slug}.price`);
+  const correctImagePath = selectedVariant.img.startsWith('/') 
+    ? selectedVariant.img 
+    : `/${selectedVariant.img}`;
+  addToCart({ 
+    ...product, 
+    selectedColor: selectedVariant.color, 
+    image: correctImagePath,
+    price: Number(price) // Явно добавляем числовое значение цены
+  });
+  
+  setIsAnimated(true);
+  setTimeout(() => setIsAnimated(false), 1000);
+};
 
   const handleColorClick = (e: React.MouseEvent, variant: any) => {
     e.preventDefault(); // Зупиняє перехід за посиланням
@@ -70,6 +76,9 @@ const [isAnimated, setIsAnimated] = useState(false);
           <span style={{ marginLeft: '4px' }}>🛒</span> 
         </S.BuyButton>
       </S.Footer>
+      <S.DetailsLink to={`/product/${product.slug}`}>
+        {t('catalog.view_details') || 'Перейти до товару'}
+      </S.DetailsLink>
     </S.Wrapper>
   );
 }

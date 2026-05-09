@@ -3,11 +3,19 @@ import { useCart } from "../context/CartContext";
 import * as S from "../styles/cart.style";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router';
 
 export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
-  const { cartItems, removeFromCart, totalPrice } = useCart();
+  const { cartItems, removeFromCart, totalPrice, clearCart } = useCart();
   const [isMobile, setIsMobile] = useState(false);
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const handleCheckout = () => {
+    if (cartItems.length > 0) {
+      onClose(); // Закрываем корзину перед переходом
+      navigate('/checkout'); // Переходим на страницу заказа
+    }
+  };
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -41,6 +49,7 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
           >
             <S.Header>
               <S.Title>{t('cart.title') || 'Кошик'} ({cartItems.length})</S.Title>
+              
               <S.CloseBtn onClick={onClose}>&times;</S.CloseBtn>
             </S.Header>
 
@@ -83,10 +92,15 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
   </S.TotalRow>
   <S.CheckoutBtn 
     disabled={cartItems.length === 0}
-    onClick={() => alert(t('cart.order_success'))}
+    onClick={handleCheckout}
   >
     {t('cart.checkout')}
   </S.CheckoutBtn>
+  {cartItems.length > 0 && (
+    <S.ClearCartBtn onClick={clearCart}>
+      {t('cart.clear_all') || 'Очистити кошик'}
+    </S.ClearCartBtn>
+    )}
 </S.Footer>
           </S.CartPanel>
         </>

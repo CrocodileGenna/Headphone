@@ -13,7 +13,8 @@
     "checkout": "Dokončit objednávku",
     "order_success": "Objednávka byla úspěšně vytvořena!",
     "add_to_cart": "Přidat do košíku",
-    "added": "Přidáno ✓"
+    "added": "Přidáno ✓",
+    "clear_all": "Vymazat vše"
   },
   "footer": {
     "description": "Nejlepší řešení pro váš komfort již od roku 2024.",
@@ -78,6 +79,7 @@
     "buy": "Koupit",
     "currency": "Kč",
     "new": "Novinka",
+    "view_details": "Zobrazit podrobnosti",
     "products": {
   "aquamist-desktop": {
     "name": "AquaMist Desktop",

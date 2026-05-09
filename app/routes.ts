@@ -10,6 +10,7 @@ export default [
   route("about", "routes/aboutPage.tsx"), 
   route("contacts", "routes/contactsPage.tsx"),
   route("product/:slug", "routes/product.$slug.tsx"),
+  route("checkout", "routes/checkout.tsx"),
 ] satisfies RouteConfig;
 
 // export default [

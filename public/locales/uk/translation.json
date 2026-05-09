@@ -13,8 +13,24 @@
     "checkout": "Оформити замовлення",
     "order_success": "Замовлення оформлено!",
     "add_to_cart": "Додати в кошик",
-    "added": "Додано ✓"
+    "added": "Додано ✓",
+    "clear_all": "Очистити кошик"
   },
+  "checkout": {
+  "title": "Оформлення замовлення",
+  "contact_info": "Контактні дані",
+  "shipping_info": "Доставка",
+  "your_order": "Ваше замовлення",
+  "placeholder_name": "Ім'я та прізвище",
+  "placeholder_email": "Електронна пошта",
+  "placeholder_phone": "Номер телефону",
+  "placeholder_address": "Адреса доставки",
+  "placeholder_post": "Номер відділення пошти",
+  "consent_text": "Я погоджуюся на обробку моїх персональних даних",
+  "confirm_order": "Підтвердити замовлення",
+  "error_consent": "Будь ласка, погодьтеся на обробку даних",
+  "success": "Замовлення успішно прийнято!"
+},
   "footer": {
     "description": "Найкращі рішення для вашого комфорту з 2024 року.",
     "clients": "Клієнтам",
@@ -78,6 +94,7 @@
     "buy": "Купити",
     "currency": "₴",
     "new": "Новинка",
+    "view_details": "Перейти до товару",
     "products": {
       "aquamist-desktop": {
         "name": "AquaMist Desktop",
