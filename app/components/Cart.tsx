@@ -61,7 +61,11 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               ) : (
                 cartItems.map((item, index) => (
                   <S.Item key={`${item.id}-${index}`}>
-                    <S.ItemImg src={item.image} alt={item.name} />
+                    {/* <S.ItemImg src={item.image} alt={item.name} /> */}
+                    <S.ItemImg 
+                       src={item.image.startsWith('http') ? item.image : (import.meta.env.BASE_URL || '/') + (item.image.startsWith('/') ? item.image.slice(1) : item.image)} 
+                       alt={item.name} 
+                     />
                     <S.ItemInfo>
                       <S.ItemName>{item.name}</S.ItemName>
                       <S.ItemPrice>{item.price} {t('catalog.currency')}</S.ItemPrice>

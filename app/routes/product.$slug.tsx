@@ -53,9 +53,10 @@ const handleAddToCart = () => {
  // 1. Добавим вспомогательную функцию для проверки путей
 const getCorrectPath = (path?: string) => {
   if (!path) return "";
-  // Если путь уже начинается с http или /, оставляем как есть, 
-  // иначе добавляем / в начало для корректного поиска от корня сайта
-  return path.startsWith('/') ? path : `/${path}`;
+  const base = import.meta.env.BASE_URL || "/";
+  // Убираем начальный слеш из пути, если он есть, чтобы не было двойного слеша //
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${base}${cleanPath}`;
 };
 
 // 2. Обработаем все изображения перед использованием

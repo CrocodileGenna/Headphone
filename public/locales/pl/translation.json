@@ -16,6 +16,21 @@
     "added": "Dodano ✓",
     "clear_all": "Wyczyść wszystko"
   },
+  "checkout": {
+  "title": "Realizacja zamówienia",
+  "contact_info": "Dane kontaktowe",
+  "shipping_info": "Wysyłka",
+  "your_order": "Twoje zamówienie",
+  "placeholder_name": "Imię i nazwisko",
+  "placeholder_email": "Adres e-mail",
+  "placeholder_phone": "Numer telefonu",
+  "placeholder_address": "Adres dostawy",
+  "placeholder_post": "Kod pocztowy / Numer oddziału",
+  "consent_text": "Wyrażam zgodę на przetwarzanie moich danych osobowych",
+  "confirm_order": "Potwierdź zamówienie",
+  "error_consent": "Proszę wyrazić zgodę na przetwarzanie danych",
+  "success": "Zamówienie zostało pomyślnie przyjęte!"
+},
   "footer": {
     "description": "Najlepsze rozwiązania dla Twojego komfortu od 2024 roku.",
     "clients": "Dla klientów",

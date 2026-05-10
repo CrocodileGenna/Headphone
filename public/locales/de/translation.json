@@ -16,6 +16,21 @@
     "added": "Hinzugefügt ✓",
     "clear_all": "Warenkorb leeren"
   },
+  "checkout": {
+  "title": "Kasse",
+  "contact_info": "Kontaktinformationen",
+  "shipping_info": "Versandinformationen",
+  "your_order": "Ihre Bestellung",
+  "placeholder_name": "Vor- und Nachname",
+  "placeholder_email": "E-Mail-Adresse",
+  "placeholder_phone": "Telefonnummer",
+  "placeholder_address": "Lieferadresse",
+  "placeholder_post": "Postleitzahl / Filialnummer",
+  "consent_text": "Ich stimme der Verarbeitung meiner personenbezogenen Daten zu",
+  "confirm_order": "Bestellung bestätigen",
+  "error_consent": "Bitte stimmen Sie der Datenverarbeitung zu",
+  "success": "Bestellung erfolgreich entgegengenommen!"
+},
   "footer": {
     "description": "Die besten Lösungen für Ihren Komfort seit 2024.",
     "clients": "Für Kunden",

@@ -15,14 +15,19 @@ const [isAnimated, setIsAnimated] = useState(false);
   e.stopPropagation();
 
   // Получаем цену из i18n, как вы это делаете в рендере
+  const base = import.meta.env.BASE_URL || "/";
   const price = t(`catalog.products.${product.slug}.price`);
-  const correctImagePath = selectedVariant.img.startsWith('/') 
-    ? selectedVariant.img 
-    : `/${selectedVariant.img}`;
+  // const correctImagePath = selectedVariant.img.startsWith('/') 
+  //   ? selectedVariant.img 
+  //   : `/${selectedVariant.img}`;
+  const cleanImagePath = selectedVariant.img.startsWith('/') 
+    ? selectedVariant.img.slice(1) 
+    : selectedVariant.img;
   addToCart({ 
     ...product, 
     selectedColor: selectedVariant.color, 
-    image: correctImagePath,
+    // image: correctImagePath,
+    image: `${base}${cleanImagePath}`,
     price: Number(price) // Явно добавляем числовое значение цены
   });
   

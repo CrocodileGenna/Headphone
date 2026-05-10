@@ -49,7 +49,11 @@ export default function Checkout() {
           <S.OrderList>
             {cartItems.map((item, idx) => (
               <S.OrderItem key={idx}>
-                <img src={item.image.startsWith('/') ? item.image : `/${item.image}`} alt={item.name} />
+                {/* <img src={item.image.startsWith('/') ? item.image : `/${item.image}`} alt={item.name} /> */}
+                <img 
+                  src={item.image.startsWith('/') ? item.image : `/${item.image}`} 
+                  alt={item.name} 
+                />
                 <div>
                   <p>{item.name}</p>
                   <span>{item.price} {t('catalog.currency')}</span>
