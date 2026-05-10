@@ -1,4 +1,4 @@
-import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}from"./CartContext-DyTmtp-C.js";import{s as t,u}from"./useTranslation-WiU9NkHO.js";import{k as f,c as w}from"./products-Dq0SDbSy.js";const $=f`
+import{L as b,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u}from"./CartContext-DyTmtp-C.js";import{s as t,u as f}from"./useTranslation-WiU9NkHO.js";import{k as w,c as $}from"./products-Dq0SDbSy.js";const y=w`
   0% {
     background-color: #10b981; /* Зеленый цвет (например, Emerald 500) */
     transform: scale(1);
@@ -12,7 +12,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
        которое задано в основном стиле кнопки ниже */
     transform: scale(1);
   }
-`,y=t.div`
+`,k=t.div`
   background-color: ${e=>e.theme.colors.white};
   border: 1px solid ${e=>e.theme.colors.border};
   padding: 1rem;
@@ -38,7 +38,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   @media (min-width: 768px) {
     padding: 1.25rem;
   }
-`,k=t.div`
+`,v=t.div`
   background-color: ${e=>e.theme.colors.backgroundSoft};
   border-radius: ${e=>e.theme.borderRadius.medium};
   margin-bottom: 1rem;
@@ -48,13 +48,13 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
-`,v=t.img`
+`,j=t.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
   mix-blend-mode: multiply;
   transition: transform 0.5s;
-`,j=t.h3`
+`,C=t.h3`
   font-family: ${e=>e.theme.fonts.accent};
   font-size: 1rem;
   font-weight: 700;
@@ -68,7 +68,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   @media (min-width: 768px) {
     font-size: 1.125rem;
   }
-`,C=t.p`
+`,A=t.p`
   font-family: ${e=>e.theme.fonts.main};
   color: ${e=>e.theme.colors.textBody};
   font-size: 0.75rem;
@@ -78,11 +78,11 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-`,A=t.div`
+`,P=t.div`
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
-`,P=t.button`
+`,z=t.button`
   width: 35px; 
   height: 35px; 
   border-radius: 50%; 
@@ -116,13 +116,13 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   //   transform: scale(1.2);
   //   border-color: ${e=>e.theme.colors.textMain};
   // }
-`,z=t.div`
+`,T=t.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
   padding-top: 0.5rem;
-`,T=t.span`
+`,B=t.span`
   font-size: 1.125rem;
   font-weight: 900;
   color: ${e=>e.theme.colors.textMain};
@@ -130,7 +130,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
   @media (min-width: 768px) {
     font-size: 1.25rem;
   }
-`,B=t.button`
+`,D=t.button`
   background-color: ${e=>e.theme.colors.textMain}; /* По умолчанию темная */
   color: ${e=>e.theme.colors.white};
   padding: 0.625rem;
@@ -156,11 +156,11 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
     padding-right: 1rem;
   }
 
-  ${e=>e.isAnimated&&w`
+  ${e=>e.isAnimated&&$`
     /* Применяем анимацию successPulse */
     /* duration: 1s (1 секунда) */
     /* timing-function: ease-out (плавно замедляется в конце) */
-    animation: ${$} 1s ease-out forwards;
+    animation: ${y} 1s ease-out forwards;
     
     /* Отключаем ховер-эффекты и скейл во время анимации */
     pointer-events: none; 
@@ -168,7 +168,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
       background-color: #059669; 
     }
   `}
-`,D=t.span`
+`,R=t.span`
   display: none;
   @media (min-width: 640px) {
     display: inline;
@@ -177,7 +177,7 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
-`,R=t(x)`
+`,I=t(b)`
   display: block;
   text-align: center;
   margin-top: 15px;
@@ -194,4 +194,4 @@ import{L as x,a as c,p as o}from"./chunk-EPOLDU6W-BnE-iRIc.js";import{u as b}fro
     background: #2563eb;
     color: white;
   }
-`;function E({product:e}){const{addToCart:d}=b(),{t:i}=u(),[s,m]=c.useState(e.variants?.[0]||{img:e.image}),[h,l]=c.useState(!1),p=r=>{r.preventDefault(),r.stopPropagation();const n=i(`catalog.products.${e.slug}.price`),a=s.img.startsWith("/")?s.img:`/${s.img}`;d({...e,selectedColor:s.color,image:a,price:Number(n)}),l(!0),setTimeout(()=>l(!1),1e3)},g=(r,n)=>{r.preventDefault(),r.stopPropagation(),m(n)};return o.jsxs(y,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx(k,{children:o.jsx(v,{src:s.img,alt:e.name})}),o.jsx(j,{children:e.name}),o.jsx(C,{children:i(`catalog.products.${e.slug}.description`)}),e.variants&&o.jsx(A,{children:e.variants.map((r,n)=>o.jsx(P,{bgColor:r.color,isActive:s.color===r.color,onClick:a=>g(a,r),title:r.colorName||""},n))}),o.jsxs(z,{children:[o.jsxs(T,{children:[i(`catalog.products.${e.slug}.price`),i("catalog.currency")]}),o.jsxs(B,{onClick:p,isAnimated:h,children:[o.jsx(D,{children:i("catalog.buy")}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]}),o.jsx(R,{to:`/product/${e.slug}`,children:i("catalog.view_details")||"Перейти до товару"})]})}export{E as P};
+`;function V({product:e}){const{addToCart:d}=u(),{t:i}=f(),[s,m]=c.useState(e.variants?.[0]||{img:e.image}),[h,l]=c.useState(!1),p=r=>{r.preventDefault(),r.stopPropagation();const n="/Chillax/",a=i(`catalog.products.${e.slug}.price`),x=s.img.startsWith("/")?s.img.slice(1):s.img;d({...e,selectedColor:s.color,image:`${n}${x}`,price:Number(a)}),l(!0),setTimeout(()=>l(!1),1e3)},g=(r,n)=>{r.preventDefault(),r.stopPropagation(),m(n)};return o.jsxs(k,{to:`/product/${e.slug}`,style:{textDecoration:"none",color:"inherit"},children:[o.jsx(v,{children:o.jsx(j,{src:s.img,alt:e.name})}),o.jsx(C,{children:e.name}),o.jsx(A,{children:i(`catalog.products.${e.slug}.description`)}),e.variants&&o.jsx(P,{children:e.variants.map((r,n)=>o.jsx(z,{bgColor:r.color,isActive:s.color===r.color,onClick:a=>g(a,r),title:r.colorName||""},n))}),o.jsxs(T,{children:[o.jsxs(B,{children:[i(`catalog.products.${e.slug}.price`),i("catalog.currency")]}),o.jsxs(D,{onClick:p,isAnimated:h,children:[o.jsx(R,{children:i("catalog.buy")}),o.jsx("span",{style:{marginLeft:"4px"},children:"🛒"})]})]}),o.jsx(I,{to:`/product/${e.slug}`,children:i("catalog.view_details")||"Перейти до товару"})]})}export{V as P};

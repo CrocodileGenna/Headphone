@@ -16,6 +16,21 @@
     "added": "Added ✓",
     "clear_all": "Clear all"
   },
+  "checkout": {
+  "title": "Checkout",
+  "contact_info": "Contact Information",
+  "shipping_info": "Shipping Details",
+  "your_order": "Your Order",
+  "placeholder_name": "Full Name",
+  "placeholder_email": "Email Address",
+  "placeholder_phone": "Phone Number",
+  "placeholder_address": "Shipping Address",
+  "placeholder_post": "ZIP / Post Code",
+  "consent_text": "I agree to the processing of my personal data",
+  "confirm_order": "Confirm Order",
+  "error_consent": "Please agree to the data processing",
+  "success": "Order successfully placed!"
+},
   "footer": {
     "description": "Premium comfort solutions since 2024.",
     "clients": "For Customers",

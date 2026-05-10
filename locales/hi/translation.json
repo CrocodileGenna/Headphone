@@ -16,6 +16,21 @@
     "added": "जोड़ा गया ✓",
     "clear_all": "सब साफ करें"
   },
+  "checkout": {
+  "title": "चेकआउट",
+  "contact_info": "संपर्क जानकारी",
+  "shipping_info": "शिपिंग विवरण",
+  "your_order": "आपका ऑर्डर",
+  "placeholder_name": "पूरा नाम",
+  "placeholder_email": "ईमेल पता",
+  "placeholder_phone": "फ़ोन नंबर",
+  "placeholder_address": "शिपिंग पता",
+  "placeholder_post": "पिन कोड / पोस्ट ऑफिस नंबर",
+  "consent_text": "मैं अपने व्यक्तिगत डेटा के प्रसंस्करण के लिए सहमत हूँ",
+  "confirm_order": "ऑर्डर की पुष्टि करें",
+  "error_consent": "कृपया डेटा प्रसंस्करण के लिए सहमति दें",
+  "success": "ऑर्डर सफलतापूर्वक स्वीकार कर लिया गया!"
+},
   "footer": {
     "description": "2024 से आपके आराम के लिए सर्वोत्तम समाधान।",
     "clients": "ग्राहकों के लिए",
